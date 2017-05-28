@@ -5,8 +5,178 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
-
+    <header class="page-header">
+      <h1 class="semantic-title">
+        Добро пожаловать в Седону!
+      </h1>
+      <nav class="main-nav">
+        <div class="main-nav__logo">
+          <img src="#" alt="logo" width="" height=""> <!-- Ввести параметры -->
+        </div>
+        <div class="main-nav__toggler"></div> <!-- Только для мобильной версии -->
+        <ul class="main-nav__list">
+          <li class="main-nav__item main-nav__item--close-menu">
+            <a href="#" class="main-nav__link">
+              Главная
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link">
+              Фото и видео
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link">
+              Форма отзыва
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link">
+              HTML Academy
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="intro">
+        <h2 class="semantic-title">
+          Введение <!--Придумывал содержание исходя из его необходимости для соблюдения семантичности
+  и независимости блока, как того требует БЭМ. Как мне кажется, стоит либо изменить содержание, либо
+  отказаться от section и верстать дивом-->
+        </h2>
+        <img src="#" width="" height="" alt="Sedona landscape"> <!-- Ввести параметры -->
+        <p class="intro__text intro__text--title">
+          Седона &#8212; небольшой городок в Аризоне, заслуживающий большего!
+        </p>
+        <p class="intro__text">
+          Рассмотрим 5 причин, по которым Седона круче чем Гранд Каньон!
+        </p>
+      </section>
+      <section class="advantage advantage--crop">
+        <div class="advantage__title">
+          <h2 class="advantage__head">
+            Настоящий городок
+          </h2>
+          <div class="avantage__number">
+            № 1
+          </div>
+          <p class="advantage__text">
+            Седона не аттракцион для туристов, там течёт своя жизнь
+          </p>
+        </div>
+        <img src="#" width="" height="" alt="Городской пейзаж"> <!-- Ввести параметры -->
+        <div class="advantage__detail facts">
+          <div class="facts__title fact__title--icon-house">
+            Жильё
+          </div>
+          <p class="facts__text">
+            Рекомендуем пожить в настоящем мотеле, всё как в кино!
+          </p>
+          <div class="facts__title fact__title--icon-souvenir">
+            Сувениры
+          </div>
+          <p class="facts__text">
+            Не только китайского но и местного производства!
+          </p>
+          <div class="facts__title fact__title--icon-food">
+            Еда
+          </div>
+          <p class="facts__text">
+            Всегда заказывайте фирменный, вы не разочаруетесь!
+          </p>
+        </div>
+      </section>
+      <section class="advantage">
+        <div class="advantage__title">
+          <h2 class="advantage__head">
+            Там есть Мост дьявола
+          </h2>
+          <div class="avantage__number">
+            № 2
+          </div>
+          <p class="advantage__text">
+            Да, по нему можно пройти! Если вы осмелитесь, конечно
+          </p>
+        </div>
+        <img src="#" width="" height="" alt="Природный пейзаж"> <!-- Ввести параметры -->
+      </section>
+      <section class="advantage advantage--short">
+        <h2 class="advantage__head advantage__head--short">
+          Небольшая площадь
+        </h2>
+        <div class="avantage__number avantage__number--short">
+          № 3
+        </div>
+        <p class="advantage__text advantage__text--short">
+          Все интересные места находятся очень близко
+        </p>
+      </section>
+      <section class="advantage advantage--short">
+        <h2 class="advantage__head advantage__head--short">
+          Красивая дорога
+        </h2>
+        <div class="avantage__number avantage__number--short">
+          № 4
+        </div>
+        <p class="advantage__text advantage__text--short">
+          Ехать в Седону из Лас Вегаса совсем не скучно!
+        </p>
+      </section>
+      <section class="advantage advantage--short">
+        <h2 class="advantage__head advantage__head--short">
+          Мало туристов
+        </h2>
+        <div class="avantage__number avantage__number--short">
+          № 5
+        </div>
+        <p class="advantage__text advantage__text--short">
+          Большинство едет в Гранд Каньон и толпится там
+        </p>
+      </section>
+      <section class="feedback">
+        <h2 class="semantic-title">
+          Форма обратной связи
+        </h2>
+        <p class="feedback__title">
+          Заинтересовались?
+        </p>
+        <p class="feedback__text">
+          Укажите предполгаемые даты поездки, мы покажем вам лучшие предложения гостиниц в Седоне
+        </p>
+        <a href="#" class="feedback__btn btn">
+          Найти гостиницу
+        </a>
+      </section>
+      <div class="map"></div> <!--Сделать карту-->
+    </main>
+    <footer class="page-footer">
+      <a href="#" class="page-footer__tag">
+        #VisitSedona
+      </a>
+      <ul class="page-footer__social-list">
+        <li class="page-footer__social-item page-footer__social-item--twitter">
+          <a href="#">
+            Twitter
+          </a>
+        </li>
+        <li class="page-footer__social-item page-footer__social-item--facebook">
+          <a href="#">
+            FaceBook
+          </a>
+        </li>
+        <li class="page-footer__social-item page-footer__social-item--youtube">
+          <a href="#">
+            YouTube
+          </a>
+        </li>
+      </ul>
+      <div class="page-footer__site-developer">
+        <p class="page-footer__text">
+          Разработано
+        </p>
+        <img src="#" width="" height="" alt="developer logo"> <!-- Ввести параметры -->
+      </div>
+    </footer>
   </body>
 </html>
