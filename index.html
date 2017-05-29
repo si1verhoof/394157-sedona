@@ -6,27 +6,27 @@
   </head>
   <body>
     <header class="page-header">
-      <h1 class="semantic-title">
+      <h1 class="visually-hidden">
         Добро пожаловать в Седону!
       </h1>
       <nav class="main-nav">
         <div class="main-nav__logo">
-          <img src="#" alt="logo" width="" height=""> <!-- Ввести параметры -->
+          <img src="#" alt="logo" width="102" height="84">
         </div>
-        <div class="main-nav__toggler"></div> <!-- Только для мобильной версии -->
+        <button class="main-nav__toggler"></button> <!-- Только для мобильной версии -->
         <ul class="main-nav__list">
           <li class="main-nav__item main-nav__item--close-menu">
-            <a href="#" class="main-nav__link">
+            <a class="main-nav__link main__nav--active">
               Главная
             </a>
           </li>
           <li class="main-nav__item">
-            <a href="#" class="main-nav__link">
+            <a href="photo.html" class="main-nav__link">
               Фото и видео
             </a>
           </li>
           <li class="main-nav__item">
-            <a href="#" class="main-nav__link">
+            <a href="form.html" class="main-nav__link">
               Форма отзыва
             </a>
           </li>
@@ -40,12 +40,10 @@
     </header>
     <main>
       <section class="intro">
-        <h2 class="semantic-title">
-          Введение <!--Придумывал содержание исходя из его необходимости для соблюдения семантичности
-  и независимости блока, как того требует БЭМ. Как мне кажется, стоит либо изменить содержание, либо
-  отказаться от section и верстать дивом-->
+        <h2 class="visually-hidden">
+          Описание Седоны
         </h2>
-        <img src="#" width="" height="" alt="Sedona landscape"> <!-- Ввести параметры -->
+        <img src="#" width="302" height="389" alt="Sedona landscape">
         <p class="intro__text intro__text--title">
           Седона &#8212; небольшой городок в Аризоне, заслуживающий большего!
         </p>
@@ -54,18 +52,18 @@
         </p>
       </section>
       <section class="advantage advantage--crop">
-        <div class="advantage__title">
-          <h2 class="advantage__head">
+        <div class="advantage__title advantage-head">
+          <h2 class="advantage-head__head">
             Настоящий городок
           </h2>
-          <div class="avantage__number">
+          <div class="avantage-head__number">
             № 1
           </div>
-          <p class="advantage__text">
+          <p class="advantage-head__text">
             Седона не аттракцион для туристов, там течёт своя жизнь
           </p>
         </div>
-        <img src="#" width="" height="" alt="Городской пейзаж"> <!-- Ввести параметры -->
+        <img src="#" width="320" height="260" alt="Городской пейзаж">
         <div class="advantage__detail facts">
           <div class="facts__title fact__title--icon-house">
             Жильё
@@ -88,18 +86,18 @@
         </div>
       </section>
       <section class="advantage">
-        <div class="advantage__title">
-          <h2 class="advantage__head">
+        <div class="advantage__title advantage-head">
+          <h2 class="advantage-head__head">
             Там есть Мост дьявола
           </h2>
-          <div class="avantage__number">
+          <div class="avantage-head__number">
             № 2
           </div>
-          <p class="advantage__text">
+          <p class="advantage-head__text">
             Да, по нему можно пройти! Если вы осмелитесь, конечно
           </p>
         </div>
-        <img src="#" width="" height="" alt="Природный пейзаж"> <!-- Ввести параметры -->
+        <img src="#" width="320" height="260" alt="Природный пейзаж">
       </section>
       <section class="advantage advantage--short">
         <h2 class="advantage__head advantage__head--short">
@@ -135,7 +133,7 @@
         </p>
       </section>
       <section class="feedback">
-        <h2 class="semantic-title">
+        <h2 class="visually-hidden">
           Форма обратной связи
         </h2>
         <p class="feedback__title">
@@ -154,18 +152,18 @@
       <a href="#" class="page-footer__tag">
         #VisitSedona
       </a>
-      <ul class="page-footer__social-list">
-        <li class="page-footer__social-item page-footer__social-item--twitter">
+      <ul class="page-footer__social-list social">
+        <li class="social__social-item social__social-item--twitter">
           <a href="#">
             Twitter
           </a>
         </li>
-        <li class="page-footer__social-item page-footer__social-item--facebook">
+        <li class="social__social-item socialr__social-item--facebook">
           <a href="#">
             FaceBook
           </a>
         </li>
-        <li class="page-footer__social-item page-footer__social-item--youtube">
+        <li class="socialr__social-item social__social-item--youtube">
           <a href="#">
             YouTube
           </a>
@@ -175,7 +173,7 @@
         <p class="page-footer__text">
           Разработано
         </p>
-        <img src="#" width="" height="" alt="developer logo"> <!-- Ввести параметры -->
+        <img src="#" width="30" height="38" alt="developer logo">
       </div>
     </footer>
   </body>

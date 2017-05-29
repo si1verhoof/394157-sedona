@@ -6,27 +6,27 @@
   </head>
   <body>
     <header class="page-header">
-      <h1 class="semantic-title">
+      <h1 class="visually-hidden">
         Добро пожаловать в Седону!
       </h1>
       <nav class="main-nav">
         <div class="main-nav__logo">
-          <img src="#" alt="logo" width="" height=""> <!-- Ввести параметры -->
+          <img src="#" alt="logo" width="102" height="84">
         </div>
-        <div class="main-nav__toggler"></div> <!-- Только для мобильной версии -->
+        <button class="main-nav__toggler"></button> <!-- Только для мобильной версии -->
         <ul class="main-nav__list">
           <li class="main-nav__item main-nav__item--close-menu">
-            <a href="#" class="main-nav__link">
+            <a href="index.html" class="main-nav__link">
               Главная
             </a>
           </li>
           <li class="main-nav__item">
-            <a href="#" class="main-nav__link">
+            <a class="main-nav__link main__nav--active">
               Фото и видео
             </a>
           </li>
           <li class="main-nav__item">
-            <a href="#" class="main-nav__link">
+            <a href="form.html" class="main-nav__link">
               Форма отзыва
             </a>
           </li>
@@ -52,7 +52,7 @@
         <h2 class="photo__title">
           Неродные просторы
         </h2>
-        <p class="photo__text">
+        <p class="photo__author">
           Автор фото: Борис
         </p>
         <div class="photo__likes-counter">
@@ -60,11 +60,11 @@
         </div>
       </section>
       <section class="photo">
-        <img src="#" width="" height="" class="photo__content" alt="Флора"> <!-- Ввести параметры -->
+        <img src="#" width="280" height="280" class="photo__content" alt="Флора">
         <h2 class="photo__title">
           Местная растительность
         </h2>
-        <p class="photo__text">
+        <p class="photo__author">
           Автор фото: Сергей
         </p>
         <div class="photo__likes-counter">
@@ -72,11 +72,11 @@
         </div>
       </section>
       <section class="photo">
-        <img src="#" width="" height="" class="photo__content" alt="Серпантин"> <!-- Ввести параметры -->
+        <img src="#" width="280" height="280" class="photo__content" alt="Серпантин">
         <h2 class="photo__title">
           Дорога на север
         </h2>
-        <p class="photo__text">
+        <p class="photo__author">
           Автор фото: Пётр
         </p>
         <div class="photo__likes-counter">
@@ -84,22 +84,22 @@
         </div>
       </section>
       <section class="photo">
-        <img src="#" width="" height="" class="photo__content" alt="Мост дьявола"> <!-- Ввести параметры -->
+        <img src="#" width="280" height="280" class="photo__content" alt="Мост дьявола">
         <h2 class="photo__title">
           Мост дьявола
         </h2>
-        <p class="photo__text">
+        <p class="photo__author">
           Автор фото: Антон
         </p>
         <div class="photo__likes-counter">
           254
         </div>
       </section>
-      <section class="prologue">
-        <h2 class="prologue__title">
+      <section class="video">
+        <h2 class="video__title">
           Всё ещё сомневаетесь?
         </h2>
-        <p class="prologue__text">
+        <p class="video__text">
           Смотрите видепрезентацию и скорее за билетами, пока они не подорожали в очередной раз!
         </p>
         <video src="#" width="" height="" controls></video>
@@ -109,18 +109,18 @@
       <a href="#" class="page-footer__tag">
         #VisitSedona
       </a>
-      <ul class="page-footer__social-list">
-        <li class="page-footer__social-item page-footer__social-item--twitter">
+      <ul class="page-footer__social-list social">
+        <li class="social__social-item social__social-item--twitter">
           <a href="#">
             Twitter
           </a>
         </li>
-        <li class="page-footer__social-item page-footer__social-item--facebook">
+        <li class="social__social-item socialr__social-item--facebook">
           <a href="#">
             FaceBook
           </a>
         </li>
-        <li class="page-footer__social-item page-footer__social-item--youtube">
+        <li class="socialr__social-item social__social-item--youtube">
           <a href="#">
             YouTube
           </a>
@@ -130,7 +130,7 @@
         <p class="page-footer__text">
           Разработано
         </p>
-        <img src="#" width="" height="" alt="developer logo"> <!-- Ввести параметры -->
+        <img src="#" width="30" height="38" alt="developer logo">
       </div>
     </footer>
   </body>
