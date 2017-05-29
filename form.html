@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <h1 class="visually-hidden">
+        Добро пожаловать в Седону!
+      </h1>
+      <nav class="main-nav">
+        <div class="main-nav__logo">
+          <img src="#" alt="logo" width="102" height="84">
+        </div>
+        <button class="main-nav__toggler"></button> <!-- Только для мобильной версии -->
+        <ul class="main-nav__list">
+          <li class="main-nav__item main-nav__item--close-menu">
+            <a href="index.html" class="main-nav__link">
+              Главная
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a href="photo.html" class="main-nav__link">
+              Фото и видео
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__link--active">
+              Форма отзыва
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link">
+              HTML Academy
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="feedback-intro">
+        <h1 class="feedback-intro__title">
+          Оставьте свой отзыв
+        </h1>
+        <p class="feedback-intro__text">
+          Помогите нашим отелям стать ещё лучше! Оставьте отзыв о них,
+          а так же о посещенных вами достопримечательностях
+        </p>
+      </div>
+      <form class="feedback-form">
+        <section class="feedback-form__name form-group">
+          <h2 class="feedback-form__title">
+            Представьтесь:
+          </h2>
+          <label for="input-name" class="form-group__label">
+            Имя<sup>*</sup>
+          </label>
+          <input type="text" class="form-group__input" placeholder="Пётр" id="input-name" required>
+          <label for="input-surname" class="form-group__label">
+            Фамилия<sup>*</sup>
+          </label>
+          <input type="text" class="form-group__input" placeholder="Иванов"  id="input-surname" required>
+          <label for="input-second-name" class="form-group__label">
+            Отчество
+          </label>
+          <input type="text" class="form-group__input" placeholder="Александрович"  id="input-second-name">
+        </section>
+        <section class="feedback-form__contacts form-group">
+          <h2 class="feedback-form__title">
+            Контактная информация:
+          </h2>
+          <label for="input-tel" class="form-group__label">
+            Контактный телефон<sup>*</sup>
+          </label>
+          <input type="tel" class="form-group__tel" placeholder="Введите телефон" id="input-tel" required> <!--паттерн нужен?-->
+          <label for="input-email" class="form-group__label">
+            Электронная почта<sup>*</sup>
+          </label>
+          <input type="email" class="contacts__email" placeholder="Введите e-mail" id="input-email" required>
+        </section>
+        <section class="feedback-form__radio form-group">
+          <h2 class="feedback-form__title">
+            Ваше общее впечатление:
+          </h2>
+          <ul class="form-group__list">
+            <li class="form-group__item">
+              <input type="radio" name="positive-feedback" id="positive" class="form-group__unit">
+              <label for="positive" class="form-group__label">
+                Скорее положительное
+              </label>
+            </li>
+            <li class="form-group__item">
+              <input type="radio" name="negative-feedback" id="negative" class="form-group__unit">
+              <label for="negative" class="form-group__label">
+                Скорее отрицательное
+              </label>
+            </li>
+            <li class="form-group__item">
+              <input type="radio" name="no-answer-feedback" id="no-answer" class="form-group__unit">
+              <label for="no-answer" class="form-group__label">
+                Затрудняюсь ответить
+              </label>
+            </li>
+          </ul>
+        </section>
+        <section class="feedback-form__checkbox form-group">
+          <h2 class="feedback-form__title">
+            Посещённые достопримечтальности:
+          </h2>
+          <ul class="form-group__list">
+            <li class="form-group__item">
+              <input type="checkbox" name="item-bridge" id="bridge" class="form-group__unit" checked>
+              <label for="bridge" class="form-group__label"></label>
+            </li>
+            <li class="form-group__item">
+              <input type="checkbox" name="item-park" id="park" class="form-group__unit" checked>
+              <label for="park" class="form-group__label"></label>
+            </li>
+            <li class="form-group__item">
+              <input type="checkbox" name="item-mountain" id="mountain" class="form-group__unit">
+              <label for="mountain" class="form-group__label"></label>
+            </li>
+            <li class="form-group__item">
+              <input type="checkbox" name="item-red-rocks" id="red-rocks" class="form-group__unit" checked>
+              <label for="red-rocks" class="form-group__label"></label>
+            </li>
+          </ul>
+        </section>
+        <section class="feedback__review form-group">
+          <h2 class="feedback-form__title">
+            Опишите свои эмоции:
+          </h2>
+          <textarea rows="5" name="review-area" id="review-field" class="form-group__textarea">
+            Опишите подробно все свои восторги
+          </textarea>
+        </section>
+        <input type="submit" value="Отправить отзыв" class="btn feedback__btn">
+      </form>
+    </main>
+    <footer class="page-footer">
+      <a href="#" class="page-footer__tag">
+        #VisitSedona
+      </a>
+      <ul class="page-footer__social-list social">
+        <li class="social__social-item social__social-item--twitter">
+          <a href="#">
+            Twitter
+          </a>
+        </li>
+        <li class="social__social-item socialr__social-item--facebook">
+          <a href="#">
+            FaceBook
+          </a>
+        </li>
+        <li class="socialr__social-item social__social-item--youtube">
+          <a href="#">
+            YouTube
+          </a>
+        </li>
+      </ul>
+      <div class="page-footer__site-developer">
+        <p class="page-footer__text">
+          Разработано
+        </p>
+        <img src="#" width="30" height="38" alt="developer logo">
+      </div>
+    </footer>
+    <div class="pop-up-submision pop-up-submision--succes">
+      <h2 class="pop-up-submision__title">
+        Ваш отзыв отрпавлен!
+      </h2>
+      <p clas="pop-up-submision__text">
+        Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.
+      </p>
+      <div class="pop-up-submision_btn btn">
+        Закрыть окно
+      </div>
+    </div>
+    <div class="pop-up-submision pop-up-submision--failure">
+      <h2 class="pop-up-submision__title">
+        Что-то пошло не так!
+      </h2>
+      <p clas="pop-up-submision__text">
+        Проверьте поля, выделенные красным, скорее всего, вы забыли их заполнить
+      </p>
+      <div class="pop-up-submision_btn btn">
+        OK
+      </div>
+    </div>
+  </body>
+</html>
