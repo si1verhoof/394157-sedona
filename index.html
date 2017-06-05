@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="fonts/ptsans.woff" rel="stylesheet">
+    <link href="fonts/ptsansbold.woff" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
@@ -10,10 +13,6 @@
         Добро пожаловать в Седону!
       </h1>
       <nav class="main-nav">
-        <div class="main-nav__logo">
-          <img src="#" alt="logo" width="102" height="84">
-        </div>
-        <button class="main-nav__toggler"></button> <!-- Только для мобильной версии -->
         <ul class="main-nav__list">
           <li class="main-nav__item main-nav__item--close-menu">
             <a class="main-nav__link main-nav__link--active">
@@ -36,6 +35,10 @@
             </a>
           </li>
         </ul>
+        <div class="main-nav__logo">
+          <img src="img/logo-sedona-mobile.svg" alt="logo" width="102" height="84">
+        </div>
+        <button class="main-nav__toggler"></button> <!-- Только для мобильной версии -->
       </nav>
     </header>
     <main>
@@ -43,7 +46,7 @@
         <h2 class="visually-hidden">
           Описание Седоны
         </h2>
-        <img src="#" width="302" height="389" alt="Sedona landscape">
+        <div class="intro__background-image"></div>
         <p class="intro__text intro__text--title">
           Седона &#8212; небольшой городок в Аризоне, заслуживающий большего!
         </p>
@@ -63,7 +66,7 @@
             Седона не аттракцион для туристов, там течёт своя жизнь
           </p>
         </div>
-        <img src="#" width="320" height="260" alt="Городской пейзаж">
+        <img src="img/photo-city-mobile@1x.jpg" width="320" height="260" alt="Городской пейзаж">
         <div class="advantage__detail facts">
           <div class="facts__title fact__title--icon-house">
             Жильё
@@ -97,52 +100,52 @@
             Да, по нему можно пройти! Если вы осмелитесь, конечно
           </p>
         </div>
-        <img src="#" width="320" height="260" alt="Природный пейзаж">
+        <img src="img/photo-bridge-mobile@1x.jpg" width="320" height="260" alt="Природный пейзаж">
       </section>
       <section class="advantage advantage--short">
-        <h2 class="advantage__head advantage__head">
+        <h2 class="advantage__head">
           Небольшая площадь
         </h2>
-        <div class="avantage__number avantage__number">
+        <div class="avantage__number">
           № 3
         </div>
-        <p class="advantage__text advantage__text">
+        <p class="advantage__text">
           Все интересные места находятся очень близко
         </p>
       </section>
       <section class="advantage advantage--short">
-        <h2 class="advantage__head advantage__head">
+        <h2 class="advantage__head">
           Красивая дорога
         </h2>
-        <div class="avantage__number avantage__number">
+        <div class="avantage__number">
           № 4
         </div>
-        <p class="advantage__text advantage__text">
+        <p class="advantage__text">
           Ехать в Седону из Лас Вегаса совсем не скучно!
         </p>
       </section>
       <section class="advantage advantage--short">
-        <h2 class="advantage__head advantage__head">
+        <h2 class="advantage__head">
           Мало туристов
         </h2>
-        <div class="avantage__number avantage__number">
+        <div class="avantage__number">
           № 5
         </div>
-        <p class="advantage__text advantage__text">
+        <p class="advantage__text">
           Большинство едет в Гранд Каньон и толпится там
         </p>
       </section>
-      <section class="feedback">
+      <section class="feedback-index">
         <h2 class="visually-hidden">
           Форма обратной связи
         </h2>
-        <p class="feedback__title">
+        <p class="feedback-index__title">
           Заинтересовались?
         </p>
-        <p class="feedback__text">
+        <p class="feedback-index__text">
           Укажите предполгаемые даты поездки, мы покажем вам лучшие предложения гостиниц в Седоне
         </p>
-        <a href="#" class="feedback__btn btn">
+        <a href="#" class="feedback-index__btn btn">
           Найти гостиницу
         </a>
       </section>
@@ -173,7 +176,7 @@
         <p class="page-footer__text">
           Разработано
         </p>
-        <img src="#" width="30" height="38" alt="developer logo">
+        <img src="img/logo-htmlacademy.svg" width="30" height="38" alt="developer logo">
       </div>
     </footer>
   </body>
