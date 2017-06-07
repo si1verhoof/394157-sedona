@@ -13,13 +13,9 @@
         Добро пожаловать в Седону!
       </h1>
       <nav class="main-nav">
-        <div class="main-nav__logo">
-          <img src="img/logo-sedona-mobile.svg" alt="logo" width="102" height="84">
-        </div>
-        <button class="main-nav__toggler"></button> <!-- Только для мобильной версии -->
         <ul class="main-nav__list">
           <li class="main-nav__item main-nav__item--close-menu">
-            <a href="index.html" class="main-nav__link">
+            <a class="main-nav__link main-nav__link--active">
               Главная
             </a>
           </li>
@@ -29,7 +25,7 @@
             </a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link main-nav__link--active">
+            <a href="form.html" class="main-nav__link">
               Форма отзыва
             </a>
           </li>
@@ -39,6 +35,10 @@
             </a>
           </li>
         </ul>
+        <div class="main-nav__logo">
+          <img src="img/logo-sedona-mobile.svg" alt="logo" width="102" height="84">
+        </div>
+        <button class="main-nav__toggler"></button> <!-- Только для мобильной версии -->
       </nav>
     </header>
     <main>
@@ -130,7 +130,7 @@
             </li>
           </ul>
         </section>
-        <section class="feedback__review form-group">
+        <section class="feedback-form__review form-group">
           <h2 class="form-group__title">
             Опишите свои эмоции:
           </h2>
@@ -138,7 +138,7 @@
             Опишите подробно все свои восторги
           </textarea>
         </section>
-        <input type="submit" value="Отправить отзыв" class="btn feedback__btn">
+        <input type="submit" value="Отправить отзыв" class="btn feedback-form__btn">
       </form>
     </main>
     <footer class="page-footer">
@@ -156,7 +156,7 @@
             FaceBook
           </a>
         </li>
-        <li class="socialr__social-item social__social-item--youtube">
+        <li class="social__social-item social__social-item--youtube">
           <a href="#">
             YouTube
           </a>
@@ -171,7 +171,7 @@
     </footer>
     <div class="pop-up-submision pop-up-submision--succes">
       <h2 class="pop-up-submision__title">
-        Ваш отзыв отрпавлен!
+        Ваш отзыв отправлен!
       </h2>
       <p clas="pop-up-submision__text">
         Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.
