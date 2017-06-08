@@ -1,7 +1,8 @@
 .intro {
   background-color: @bg-color-white;
   outline: 2px solid blue;
-  padding: 0 20px 47px;
+  padding: 47px 20px;
+  .container();
 }
 
 .intro__text {
@@ -20,13 +21,27 @@
   line-height: 26px;
 }
 
-.intro__background-image {
-  width: 320px;
-  height: 260px;
-  background-image: url("../../img/bg-back-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: top center;
-  border: 2px solid red;
-  margin-left: -20px;
-  margin-bottom: 47px;
+@media @tablet-widths {
+  .intro {
+    width: 100%;
+  }
+
+  .intro__text {
+    display: inline-block;
+    vertical-align: center;
+    width: 492px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .intro__text--title {
+    width: 447px;
+    text-align: center;
+  }
+
 }
+
+/* параметры не отличаются от планшетной, если всё верно сделано
+@media @desktop-widths {
+
+}*/

@@ -1,17 +1,32 @@
 .main-nav {
   background-color: @bg-color-white;
   outline: 2px solid gray;
+  width: 320px;
+  margin: 0 auto;
+  position: relative;
 }
 
 .main-nav__list {
   margin: 0;
   padding:0;
+  min-height: 224px;
+}
+
+.main-nav__toggler {
+  min-height: 56px;
 }
 
 .main-nav__item {
   background-color: @bg-color;
   list-style: none;
   text-align: center;
+}
+
+.main-nav__logo {
+  position: absolute;
+  bottom: -12px;
+  left: 50%; /*Не работает*/
+  z-index: 10;
 }
 
 .main-nav__link {
@@ -22,4 +37,72 @@
   font-size: 18px;
   line-height: 40px;
   font-weight: bold;
+}
+
+@media @tablet-widths {
+
+  .main-nav {
+    width: 100%;
+    min-height: 70px;
+    margin: 0;
+  }
+
+  .main-nav_wrapper {
+    .container();
+  }
+
+  .main-nav__list {
+    min-height: 60px;
+    display: flex;
+  }
+
+  .main-nav__item {
+    background-color: @bg-color-white;
+  }
+
+  .main-nav__link {
+    color: @color-black;
+    padding: 21px 30px;
+  }
+
+  .main-nav__item:nth-child(2) {
+    margin-right: 200px; /*Временно, потом буду ровнять*/
+  }
+
+  .main-nav__logo {
+    position: absolute;
+    top: 0;
+    left: 50%; /* Повтор строки 28 */
+  }
+
+  .main-nav__toggler {
+    display: none;
+  }
+
+}
+
+@media @desktop-widths {
+
+  .main-nav__list {
+    width: 100%;
+  }
+
+  .main-nav__link {
+    padding: 21px 80px;
+  }
+
+  .main-nav__item:nth-child(2) {
+    margin-right: 100px; /*Временно, потом буду ровнять*/
+  }
+
+  .main-nav__toggler {
+    display: none;
+  }
+
+  .main-nav__logo {
+    position: absolute;
+    top: 0;
+    left: 50%; /* Повтор строки 28 */
+  }
+
 }
