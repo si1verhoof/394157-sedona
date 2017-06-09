@@ -1,7 +1,12 @@
 .facts {
   font-size: 14px;
   line-height: 21px;
+}
+
+.facts__item {
   padding: 40px 20px;
+  box-sizing: border-box;
+  outline: 2px solid lightblue;
 }
 
 .facts__title {
@@ -13,4 +18,32 @@
 .facts__text {
   margin: 0;
   padding: 0;
+}
+
+@media @tablet-widths {
+
+  .facts {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .facts__item {
+    width: 256px;
+    min-height: 256px;
+  }
+
+  .facts__item--icon-souvenir,
+  .advantage-head--flex-order {
+    order: 1;
+  }
+
+}
+
+@media @desktop-widths {
+
+  .facts__item {
+    width: 400px;
+    min-height: 256px;
+  }
+
 }

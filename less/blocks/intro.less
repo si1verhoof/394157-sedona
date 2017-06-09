@@ -2,7 +2,6 @@
   background-color: @bg-color-white;
   outline: 2px solid blue;
   padding: 47px 20px;
-  .container();
 }
 
 .intro__text {
@@ -22,8 +21,12 @@
 }
 
 @media @tablet-widths {
+
   .intro {
     width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
   }
 
   .intro__text {

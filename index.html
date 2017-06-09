@@ -13,34 +13,32 @@
         Добро пожаловать в Седону!
       </h1>
       <nav class="main-nav">
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list">
-            <li class="main-nav__item main-nav__item--close-menu">
-              <a class="main-nav__link main-nav__link--active">
-                Главная
-              </a>
-            </li>
-            <li class="main-nav__item">
-              <a href="photo.html" class="main-nav__link">
-                Фото и видео
-              </a>
-            </li>
-            <li class="main-nav__item">
-              <a href="form.html" class="main-nav__link">
-                Форма отзыва
-              </a>
-            </li>
-            <li class="main-nav__item">
-              <a href="#" class="main-nav__link">
-                HTML Academy
-              </a>
-            </li>
-          </ul>
-          <div class="main-nav__logo">
-            <img src="img/logo-sedona-mobile.svg" alt="logo" width="102" height="84">
-          </div>
-          <button class="main-nav__toggler"></button> <!-- Только для мобильной версии -->
+        <ul class="main-nav__list">
+          <li class="main-nav__item main-nav__item--close-menu">
+            <a class="main-nav__link main-nav__link--active">
+              Главная
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a href="photo.html" class="main-nav__link">
+              Фото и видео
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a href="form.html" class="main-nav__link">
+              Форма отзыва
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link">
+              HTML Academy
+            </a>
+          </li>
+        </ul>
+        <div class="main-nav__logo">
+          <img src="img/logo-sedona-mobile.svg" alt="logo" width="102" height="84">
         </div>
+        <button class="main-nav__toggler"></button> <!-- Только для мобильной версии -->
       </nav>
       <div class="page-header__background-image"></div>
     </header>
@@ -70,28 +68,34 @@
         </div>
         <img src="img/photo-city-mobile@1x.jpg" width="320" height="260" alt="Городской пейзаж">
         <div class="advantage__detail facts">
-          <div class="facts__title fact__title--icon-house">
-            Жильё
+          <div class="facts__item facts__item--icon-house">
+            <div class="facts__title">
+              Жильё
+            </div>
+            <p class="facts__text">
+              Рекомендуем пожить в настоящем мотеле, всё как в кино!
+            </p>
           </div>
-          <p class="facts__text">
-            Рекомендуем пожить в настоящем мотеле, всё как в кино!
-          </p>
-          <div class="facts__title fact__title--icon-souvenir">
-            Сувениры
+          <div class="facts__item facts__item--icon-souvenir">
+            <div class="facts__title">
+              Сувениры
+            </div>
+            <p class="facts__text">
+              Не только китайского но и местного производства!
+            </p>
           </div>
-          <p class="facts__text">
-            Не только китайского но и местного производства!
-          </p>
-          <div class="facts__title fact__title--icon-food">
-            Еда
+          <div class="facts__item facts__item--icon-food">
+            <div class="facts__title">
+              Еда
+            </div>
+            <p class="facts__text">
+              Всегда заказывайте фирменный, вы не разочаруетесь!
+            </p>
           </div>
-          <p class="facts__text">
-            Всегда заказывайте фирменный, вы не разочаруетесь!
-          </p>
         </div>
       </section>
       <section class="advantage">
-        <div class="advantage__title advantage-head">
+        <div class="advantage__title advantage-head advantage-head--flex-order">
           <h2 class="advantage-head__head">
             Там есть Мост дьявола
           </h2>
@@ -105,43 +109,45 @@
         <img src="img/photo-bridge-mobile@1x.jpg" width="320" height="260" alt="Природный пейзаж">
       </section>
       <section class="advantage advantage--short">
-        <h2 class="advantage__head">
-          Небольшая площадь
-        </h2>
-        <div class="avantage__number">
-          № 3
+        <div class="advantage-item--short">
+          <h2 class="advantage__head">
+            Небольшая площадь
+          </h2>
+          <div class="avantage__number">
+            № 3
+          </div>
+          <p class="advantage__text">
+            Все интересные места находятся очень близко
+          </p>
         </div>
-        <p class="advantage__text">
-          Все интересные места находятся очень близко
-        </p>
-      </section>
-      <section class="advantage advantage--short">
-        <h2 class="advantage__head">
-          Красивая дорога
-        </h2>
-        <div class="avantage__number">
-          № 4
+        <div class="advantage-item--short">
+          <h2 class="advantage__head">
+            Красивая дорога
+          </h2>
+          <div class="avantage__number">
+            № 4
+          </div>
+          <p class="advantage__text">
+            Ехать в Седону из Лас Вегаса совсем не скучно!
+          </p>
         </div>
-        <p class="advantage__text">
-          Ехать в Седону из Лас Вегаса совсем не скучно!
-        </p>
-      </section>
-      <section class="advantage advantage--short">
-        <h2 class="advantage__head">
-          Мало туристов
-        </h2>
-        <div class="avantage__number">
-          № 5
+        <div class="advantage-item--short">
+          <h2 class="advantage__head">
+            Мало туристов
+          </h2>
+          <div class="avantage__number">
+            № 5
+          </div>
+          <p class="advantage__text">
+            Большинство едет в Гранд Каньон и толпится там
+          </p>
         </div>
-        <p class="advantage__text">
-          Большинство едет в Гранд Каньон и толпится там
-        </p>
       </section>
       <section class="feedback-index">
         <h2 class="visually-hidden">
           Форма обратной связи
         </h2>
-        <p class="feedback-index__title">
+        <p class="feedback-index__text feedback-index__text--title">
           Заинтересовались?
         </p>
         <p class="feedback-index__text">

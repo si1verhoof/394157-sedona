@@ -7,7 +7,12 @@
 
 .advantage--short {
   background-color: @bg-color-gray;
+}
+
+.advantage-item--short {
   padding: 30px 20px;
+  box-sizing: border-box;
+  outline: 2px solid lightgreen;
 }
 
 .advantage__head {
@@ -20,4 +25,39 @@
 .advantage__text {
   margin: 0;
   padding: 0;
+}
+
+@media @tablet-widths {
+
+  .advantage {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .advantage__title,
+  .advantage-item--short {
+    width: 256px;
+    min-height: 256px;
+  }
+
+  .advantage img {
+    width: 512px;
+    min-height: 256px;
+  }
+
+}
+
+@media @desktop-widths {
+
+  .advantage__title,
+  .advantage-item--short {
+    width: 400px;
+    min-height: 256px;
+  }
+
+  .advantage img {
+    width: 800px;
+    min-height: 256px;
+  }
+
 }

@@ -7,7 +7,7 @@
   padding: 30px 20px 50px;
 }
 
-.feedback-index__title {
+.feedback-index__text--title {
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
@@ -19,4 +19,29 @@
 .feedback-index__text {
   margin: 0;
   padding: 0;
+}
+
+@media @tablet-widths {
+
+  .feedback-index {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .feedback-index__text {
+    display: inline-block;
+    vertical-align: center;
+    width: 442px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .feedback-index {
+    width: 447px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
 }
