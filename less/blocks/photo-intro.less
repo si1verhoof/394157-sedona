@@ -5,9 +5,10 @@
   color: @color-gray;
   text-transform: uppercase;
   padding: 40px 20px 30px;
+  box-sizing: border-box;
 }
 
-.photo-intro__title {
+.photo-intro__text--title {
   font-size: 18px;
   line-height: 26px;
   color: @color-black;
@@ -19,4 +20,25 @@
 .photo-intro__text {
   margin: 0;
   padding: 0;
+}
+
+@media @tablet-widths {
+
+  .photo-intro {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .photo-intro__text {
+    display: inline-block;
+    vertical-align: center;
+    width: 440px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .photo-intro__text--title {
+    width: 214px;
+  }
+
 }

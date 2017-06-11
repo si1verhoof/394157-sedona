@@ -10,13 +10,20 @@
   outline: 2px solid red;
 }
 
+.page-header__background-image--short {
+  height: 160px;
+}
+
 @media @tablet-widths {
 
   .page-header {
     position: relative;
-
     min-height: 57px;
     padding-bottom: 520px;
+  }
+
+  .page-header--short {
+    padding-bottom: 290px;
   }
 
   .page-header__background-image {
@@ -24,6 +31,10 @@
     height: 520px;
     position: absolute;
     bottom: 0;
+  }
+
+  .page-header__background-image--short {
+    height: 290px;
   }
 
 }
@@ -34,8 +45,16 @@
     padding-bottom: 520px;
   }
 
+  .page-header--short {
+    padding-bottom: 300px;
+  }
+
   .page-header__logo {
     height: 520px;
+  }
+
+  .page-header__background-image--short {
+    height: 300px;
   }
 
 }

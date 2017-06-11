@@ -8,14 +8,14 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header page-header--short">
       <h1 class="visually-hidden">
         Добро пожаловать в Седону!
       </h1>
       <nav class="main-nav">
         <ul class="main-nav__list">
           <li class="main-nav__item main-nav__item--close-menu">
-            <a class="main-nav__link main-nav__link--active">
+            <a href="index.html" class="main-nav__link main-nav__link--active">
               Главная
             </a>
           </li>
@@ -25,7 +25,7 @@
             </a>
           </li>
           <li class="main-nav__item">
-            <a href="form.html" class="main-nav__link">
+            <a class="main-nav__link">
               Форма отзыва
             </a>
           </li>
@@ -40,10 +40,11 @@
         </div>
         <button class="main-nav__toggler"></button> <!-- Только для мобильной версии -->
       </nav>
+      <div class="page-header__background-image page-header__background-image--short"></div>
     </header>
     <main>
       <div class="feedback-intro">
-        <h1 class="feedback-intro__title">
+        <h1 class="feedback-intro__text feedback-intro__texto--title">
           Оставьте свой отзыв
         </h1>
         <p class="feedback-intro__text">
@@ -52,7 +53,7 @@
         </p>
       </div>
       <form class="feedback-form">
-        <section class="feedback-form__name form-group">
+        <section class="feedback-form__name feedback-form__item form-group">
           <h2 class="form-group__title">
             Представьтесь:
           </h2>
@@ -69,7 +70,7 @@
           </label>
           <input type="text" class="form-group__input" placeholder="Александрович"  id="input-second-name">
         </section>
-        <section class="feedback-form__contacts form-group">
+        <section class="feedback-form__contacts feedback-form__item form-group">
           <h2 class="form-group__title">
             Контактная информация:
           </h2>
@@ -82,7 +83,7 @@
           </label>
           <input type="email" class="contacts__email" placeholder="Введите e-mail" id="input-email" required>
         </section>
-        <section class="feedback-form__radio form-group">
+        <section class="feedback-form__radio feedback-form__item form-group">
           <h2 class="form-group__title">
             Ваше общее впечатление:
           </h2>
@@ -107,7 +108,7 @@
             </li>
           </ul>
         </section>
-        <section class="feedback-form__checkbox form-group">
+        <section class="feedback-form__checkbox feedback-form__item form-group">
           <h2 class="form-group__title">
             Посещённые достопримечтальности:
           </h2>
@@ -130,13 +131,11 @@
             </li>
           </ul>
         </section>
-        <section class="feedback-form__review form-group">
+        <section class="feedback-form__review feedback-form__item form-group">
           <h2 class="form-group__title">
             Опишите свои эмоции:
           </h2>
-          <textarea rows="5" name="review-area" id="review-field" class="form-group__textarea">
-            Опишите подробно все свои восторги
-          </textarea>
+          <textarea rows="5" name="review-area" id="review-field" class="form-group__textarea">Опишите подробно все свои восторги</textarea>
         </section>
         <input type="submit" value="Отправить отзыв" class="btn feedback-form__btn">
       </form>

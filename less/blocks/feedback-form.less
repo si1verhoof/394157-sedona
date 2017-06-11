@@ -1,3 +1,51 @@
 .feedback-form__btn {
   margin: 0 20px;
 }
+
+.feedback-form__item {
+  box-sizing: border-box;
+}
+
+@media @tablet-widths {
+
+  .feedback-form {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 60px;
+  }
+
+  .feedback-form__item {
+    width: 324px;
+    min-height: 320px;
+  }
+
+  .feedback-form__contacts,
+  .feedback-form__checkbox,
+  .feedback-form__review {
+    width: 648px;
+  }
+
+  .feedback-form__radio {
+    order: -1;
+  }
+
+}
+
+@media @desktop-widths {
+
+  .feedback-form {
+    padding: 0 120px;
+  }
+
+  .feedback-form__item {
+    width: 480px;
+    min-height: 320px;
+  }
+
+  .feedback-form__contacts,
+  .feedback-form__checkbox,
+  .feedback-form__review {
+    width: 960px;
+  }
+
+}
