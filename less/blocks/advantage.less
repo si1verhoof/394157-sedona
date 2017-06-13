@@ -1,7 +1,7 @@
 .advantage {
   outline: 2px solid green;
-  font-size: 14px;
-  line-height: 21px;
+  font-size: 0;
+  line-height: 0;
   text-transform: uppercase;
 }
 
@@ -13,6 +13,7 @@
   padding: 30px 20px;
   box-sizing: border-box;
   outline: 2px solid lightgreen;
+  text-align: center;
 }
 
 .advantage__head {
@@ -27,6 +28,10 @@
   padding: 0;
 }
 
+.advantage__title {
+  text-align: center;
+}
+
 @media @tablet-widths {
 
   .advantage {
@@ -35,7 +40,7 @@
   }
 
   .advantage__title,
-  .advantage-item--short {
+  .advantage__item--short {
     width: 256px;
     min-height: 256px;
   }
@@ -50,7 +55,7 @@
 @media @desktop-widths {
 
   .advantage__title,
-  .advantage-item--short {
+  .advantage__item--short {
     width: 400px;
     min-height: 256px;
   }
