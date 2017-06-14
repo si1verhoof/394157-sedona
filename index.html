@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
@@ -10,10 +11,6 @@
         Добро пожаловать в Седону!
       </h1>
       <nav class="main-nav">
-        <div class="main-nav__logo">
-          <img src="#" alt="logo" width="102" height="84">
-        </div>
-        <button class="main-nav__toggler"></button> <!-- Только для мобильной версии -->
         <ul class="main-nav__list">
           <li class="main-nav__item main-nav__item--close-menu">
             <a class="main-nav__link main-nav__link--active">
@@ -36,14 +33,20 @@
             </a>
           </li>
         </ul>
+        <div class="main-nav__logo">
+          <img src="img/logo-sedona-mobile.svg" alt="logo" width="102" height="84">
+        </div>
+        <div class="main-nav__toggler">
+          <span class="toggler"></span> <!-- Только для мобильной версии -->
+        </div>
       </nav>
+      <div class="page-header__background-image"></div>
     </header>
     <main>
       <section class="intro">
         <h2 class="visually-hidden">
           Описание Седоны
         </h2>
-        <img src="#" width="302" height="389" alt="Sedona landscape">
         <p class="intro__text intro__text--title">
           Седона &#8212; небольшой городок в Аризоне, заслуживающий большего!
         </p>
@@ -53,96 +56,104 @@
       </section>
       <section class="advantage advantage--crop">
         <div class="advantage__title advantage-head">
-          <h2 class="advantage-head__head">
+          <h2 class="advantage-head__text advantage-head__text--head">
             Настоящий городок
           </h2>
-          <div class="avantage-head__number">
-            № 1
+          <div class="advantage-head__text avantage-head__text--number">
+            &#8211; № 1 &#8211;
           </div>
           <p class="advantage-head__text">
             Седона не аттракцион для туристов, там течёт своя жизнь
           </p>
         </div>
-        <img src="#" width="320" height="260" alt="Городской пейзаж">
+        <img src="img/photo-city-mobile@1x.jpg" width="320" height="260" alt="Городской пейзаж">
         <div class="advantage__detail facts">
-          <div class="facts__title fact__title--icon-house">
-            Жильё
+          <div class="facts__item facts__item--icon-house">
+            <div class="facts__text facts__text--title">
+              Жильё
+            </div>
+            <p class="facts__text">
+              Рекомендуем пожить в настоящем мотеле, всё как в кино!
+            </p>
           </div>
-          <p class="facts__text">
-            Рекомендуем пожить в настоящем мотеле, всё как в кино!
-          </p>
-          <div class="facts__title fact__title--icon-souvenir">
-            Сувениры
+          <div class="facts__item facts__item--icon-souvenir">
+            <div class="facts__text facts__text--title">
+              Сувениры
+            </div>
+            <p class="facts__text">
+              Не только китайского но и местного производства!
+            </p>
           </div>
-          <p class="facts__text">
-            Не только китайского но и местного производства!
-          </p>
-          <div class="facts__title fact__title--icon-food">
-            Еда
+          <div class="facts__item facts__item--icon-food">
+            <div class="facts__text facts__text--title">
+              Еда
+            </div>
+            <p class="facts__text">
+              Всегда заказывайте фирменный, вы не разочаруетесь!
+            </p>
           </div>
-          <p class="facts__text">
-            Всегда заказывайте фирменный, вы не разочаруетесь!
-          </p>
         </div>
       </section>
       <section class="advantage">
-        <div class="advantage__title advantage-head">
-          <h2 class="advantage-head__head">
+        <div class="advantage__title advantage-head advantage-head--flex-order">
+          <h2 class="advantage-head__text advantage-head__text--head">
             Там есть Мост дьявола
           </h2>
-          <div class="avantage-head__number">
-            № 2
+          <div class="advantage-head__text avantage-head__text--number">
+            &#8211; № 2 &#8211;
           </div>
           <p class="advantage-head__text">
             Да, по нему можно пройти! Если вы осмелитесь, конечно
           </p>
         </div>
-        <img src="#" width="320" height="260" alt="Природный пейзаж">
+        <img src="img/photo-bridge-mobile@1x.jpg" width="320" height="260" alt="Природный пейзаж">
       </section>
       <section class="advantage advantage--short">
-        <h2 class="advantage__head advantage__head">
-          Небольшая площадь
-        </h2>
-        <div class="avantage__number avantage__number">
-          № 3
+        <div class="advantage__item--short">
+          <h2 class="advantage-head__text advantage-head__text--head advantage-head__text--short">
+            Небольшая площадь
+          </h2>
+          <div class="advantage-head__text avantage-head__text--number">
+            &#8211; № 3 &#8211;
+          </div>
+          <p class="advantage-head__text">
+            Все интересные места находятся очень близко
+          </p>
         </div>
-        <p class="advantage__text advantage__text">
-          Все интересные места находятся очень близко
-        </p>
-      </section>
-      <section class="advantage advantage--short">
-        <h2 class="advantage__head advantage__head">
-          Красивая дорога
-        </h2>
-        <div class="avantage__number avantage__number">
-          № 4
+        <div class="advantage__item--short">
+          <h2 class="advantage-head__text advantage-head__text--head advantage-head__text--short">
+            Красивая дорога
+          </h2>
+          <div class="advantage-head__text avantage-head__text--number">
+            &#8211; № 4 &#8211;
+          </div>
+          <p class="advantage-head__text">
+            Ехать в Седону из Лас Вегаса совсем не скучно!
+          </p>
         </div>
-        <p class="advantage__text advantage__text">
-          Ехать в Седону из Лас Вегаса совсем не скучно!
-        </p>
-      </section>
-      <section class="advantage advantage--short">
-        <h2 class="advantage__head advantage__head">
-          Мало туристов
-        </h2>
-        <div class="avantage__number avantage__number">
-          № 5
+        <div class="advantage__item--short">
+          <h2 class="advantage-head__text advantage-head__text--head advantage-head__text--short">
+            Мало туристов
+          </h2>
+          <div class="advantage-head__text avantage-head__text--number">
+            &#8211; № 5 &#8211;
+          </div>
+          <p class="advantage-head__text">
+            Большинство едет в Гранд Каньон и толпится там
+          </p>
         </div>
-        <p class="advantage__text advantage__text">
-          Большинство едет в Гранд Каньон и толпится там
-        </p>
       </section>
-      <section class="feedback">
+      <section class="feedback-index">
         <h2 class="visually-hidden">
           Форма обратной связи
         </h2>
-        <p class="feedback__title">
+        <p class="feedback-index__text feedback-index__text--title">
           Заинтересовались?
         </p>
-        <p class="feedback__text">
+        <p class="feedback-index__text">
           Укажите предполгаемые даты поездки, мы покажем вам лучшие предложения гостиниц в Седоне
         </p>
-        <a href="#" class="feedback__btn btn">
+        <a href="#" class="feedback-index__btn btn">
           Найти гостиницу
         </a>
       </section>
@@ -163,7 +174,7 @@
             FaceBook
           </a>
         </li>
-        <li class="socialr__social-item social__social-item--youtube">
+        <li class="social__social-item social__social-item--youtube">
           <a href="#">
             YouTube
           </a>
@@ -173,7 +184,7 @@
         <p class="page-footer__text">
           Разработано
         </p>
-        <img src="#" width="30" height="38" alt="developer logo">
+        <img src="img/logo-htmlacademy.svg" width="30" height="38" alt="developer logo">
       </div>
     </footer>
   </body>

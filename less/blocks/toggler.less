@@ -1,0 +1,22 @@
+.toggler {
+  display: block;
+  height: 4px;
+  width: 23px;
+  background-color: @bg-color;
+  border: none;
+  box-shadow: none;
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+    height: 4px;
+    width: 23px;
+    background-color: @bg-color;
+  };
+  &::before {
+    transform: translateY(-9px);
+  };
+  &::after {
+    transform: translateY(4.5px);
+  }
+}

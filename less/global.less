@@ -1,0 +1,35 @@
+@font-face {
+  font-weight: 700;
+  font-family: "PT Sans";
+  font-style: normal;
+  src: url("../fonts/ptsansbold.woff2") format("woff2"),
+  url("../fonts/ptsansbold.woff") format("woff");
+}
+
+@font-face {
+  font-weight: 400;
+  font-family: "PT Sans";
+  font-style: normal;
+  src: url("../fonts/ptsans.woff2") format("woff2"),
+  url("../fonts/ptsans.woff") format("woff");
+}
+
+body {
+  font-family: "PT Sans", "Verdana", sans-serif;
+  width: 320px;
+  margin: 0 auto;
+  font-size: 0;
+
+  @media @tablet-widths {
+    width: 768px;
+  }
+
+  @media @desktop-widths {
+    width: 1200px;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

@@ -1,0 +1,55 @@
+.intro {
+  background-color: @bg-color-white;
+  outline: 2px solid blue;
+  padding: 47px 20px 12px;
+}
+
+.intro__text {
+  font-size: 14px;
+  line-height: 18px;
+  color: @color-gray;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  vertical-align: middle;
+  width: 260px;
+  text-align: center;
+  margin: 0 auto 35px;
+}
+
+.intro__text--title {
+  font-weight: bold;
+  color: @color-black;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+@media @tablet-widths {
+
+  .intro {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .intro__text {
+    display: inline-block;
+    vertical-align: center;
+    width: 492px;
+    text-align: center;
+    margin: 0 auto 35px;
+  }
+
+  .intro__text--title {
+    width: 447px;
+    text-align: center;
+  }
+
+}
+
+/* параметры не отличаются от планшетной, если всё верно сделано
+@media @desktop-widths {
+
+}*/

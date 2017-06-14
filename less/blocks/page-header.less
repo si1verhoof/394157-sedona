@@ -1,0 +1,60 @@
+.page-header {
+  min-height: 280px; /*если верить демке, то временно для сетки, но ведь нет ничего более постоянного, чем временное*/
+}
+
+.page-header__background-image {
+  height: 390px;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  outline: 2px solid red;
+}
+
+.page-header__background-image--short {
+  height: 160px;
+}
+
+@media @tablet-widths {
+
+  .page-header {
+    position: relative;
+    min-height: 57px;
+    padding-bottom: 520px;
+  }
+
+  .page-header--short {
+    padding-bottom: 290px;
+  }
+
+  .page-header__background-image {
+    width: 100%;
+    height: 520px;
+    position: absolute;
+    bottom: 0;
+  }
+
+  .page-header__background-image--short {
+    height: 290px;
+  }
+
+}
+
+@media @desktop-widths {
+
+  .page-header {
+    padding-bottom: 520px;
+  }
+
+  .page-header--short {
+    padding-bottom: 300px;
+  }
+
+  .page-header__logo {
+    height: 520px;
+  }
+
+  .page-header__background-image--short {
+    height: 300px;
+  }
+
+}

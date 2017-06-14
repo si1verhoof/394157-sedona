@@ -3,20 +3,17 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header page-header--short">
       <h1 class="visually-hidden">
         Добро пожаловать в Седону!
       </h1>
       <nav class="main-nav">
-        <div class="main-nav__logo">
-          <img src="#" alt="logo" width="102" height="84">
-        </div>
-        <button class="main-nav__toggler"></button> <!-- Только для мобильной версии -->
         <ul class="main-nav__list">
           <li class="main-nav__item main-nav__item--close-menu">
-            <a href="index.html" class="main-nav__link">
+            <a href="index.html" class="main-nav__link main-nav__link--active">
               Главная
             </a>
           </li>
@@ -26,7 +23,7 @@
             </a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link main-nav__link--active">
+            <a class="main-nav__link">
               Форма отзыва
             </a>
           </li>
@@ -36,11 +33,18 @@
             </a>
           </li>
         </ul>
+        <div class="main-nav__logo">
+          <img src="img/logo-sedona-mobile.svg" alt="logo" width="102" height="84">
+        </div>
+        <div class="main-nav__toggler">
+          <span class="toggler"></span> <!-- Только для мобильной версии -->
+        </div>
       </nav>
+      <div class="page-header__background-image page-header__background-image--short"></div>
     </header>
     <main>
       <div class="feedback-intro">
-        <h1 class="feedback-intro__title">
+        <h1 class="feedback-intro__text feedback-intro__texto--title">
           Оставьте свой отзыв
         </h1>
         <p class="feedback-intro__text">
@@ -49,93 +53,99 @@
         </p>
       </div>
       <form class="feedback-form">
-        <section class="feedback-form__name form-group">
-          <h2 class="feedback-form__title">
+        <section class="feedback-form__name feedback-form__item form-group">
+          <h2 class="form-group__title">
             Представьтесь:
           </h2>
-          <label for="input-name" class="form-group__label">
-            Имя<sup>*</sup>
-          </label>
-          <input type="text" class="form-group__input" placeholder="Пётр" id="input-name" required>
-          <label for="input-surname" class="form-group__label">
-            Фамилия<sup>*</sup>
-          </label>
-          <input type="text" class="form-group__input" placeholder="Иванов"  id="input-surname" required>
-          <label for="input-second-name" class="form-group__label">
-            Отчество
-          </label>
-          <input type="text" class="form-group__input" placeholder="Александрович"  id="input-second-name">
+          <ul class="form-group__list form-group__list--input-fields">
+            <li class="form-group__item form-group__item--input-fields">
+              <label for="input-name" class="form-group__label">
+                Имя<sup>*</sup>
+              </label>
+              <input type="text" class="form-group__input" placeholder="Пётр" id="input-name" required>
+            </li>
+            <li class="form-group__item form-group__item--input-fields">
+              <label for="input-surname" class="form-group__label">
+                Фамилия<sup>*</sup>
+              </label>
+              <input type="text" class="form-group__input" placeholder="Иванов"  id="input-surname" required>
+            </li>
+            <li class="form-group__item form-group__item--input-fields">
+              <label for="input-second-name" class="form-group__label">
+                Отчество
+              </label>
+              <input type="text" class="form-group__input" placeholder="Александрович"  id="input-second-name">
+            </li>
+          </ul>
         </section>
-        <section class="feedback-form__contacts form-group">
-          <h2 class="feedback-form__title">
+        <section class="feedback-form__contacts feedback-form__item form-group">
+          <h2 class="form-group__title">
             Контактная информация:
           </h2>
           <label for="input-tel" class="form-group__label">
             Контактный телефон<sup>*</sup>
           </label>
-          <input type="tel" class="form-group__tel" placeholder="Введите телефон" id="input-tel" required> <!--паттерн нужен?-->
+          <input type="tel" class="form-group__tel form-group__input" placeholder="Введите телефон" id="input-tel" required> <!--паттерн нужен?-->
           <label for="input-email" class="form-group__label">
             Электронная почта<sup>*</sup>
           </label>
-          <input type="email" class="contacts__email" placeholder="Введите e-mail" id="input-email" required>
+          <input type="email" class="contacts__email form-group__input" placeholder="Введите e-mail" id="input-email" required>
         </section>
-        <section class="feedback-form__radio form-group">
-          <h2 class="feedback-form__title">
+        <section class="feedback-form__radio feedback-form__item form-group">
+          <h2 class="form-group__title">
             Ваше общее впечатление:
           </h2>
           <ul class="form-group__list">
             <li class="form-group__item">
-              <input type="radio" name="positive-feedback" id="positive" class="form-group__unit">
-              <label for="positive" class="form-group__label">
+              <input type="radio" name="positive-feedback" id="positive" class="form-group__unit" checked>
+              <label for="positive" class="form-group__label form-group__label--radio form-group__label--non-transform">
                 Скорее положительное
               </label>
             </li>
             <li class="form-group__item">
               <input type="radio" name="negative-feedback" id="negative" class="form-group__unit">
-              <label for="negative" class="form-group__label">
+              <label for="negative" class="form-group__label--non-transform form-group__label--radio">
                 Скорее отрицательное
               </label>
             </li>
             <li class="form-group__item">
               <input type="radio" name="no-answer-feedback" id="no-answer" class="form-group__unit">
-              <label for="no-answer" class="form-group__label">
+              <label for="no-answer" class="form-group__label--non-transform form-group__label--radio">
                 Затрудняюсь ответить
               </label>
             </li>
           </ul>
         </section>
-        <section class="feedback-form__checkbox form-group">
-          <h2 class="feedback-form__title">
+        <section class="feedback-form__checkbox feedback-form__item form-group">
+          <h2 class="form-group__title">
             Посещённые достопримечтальности:
           </h2>
-          <ul class="form-group__list">
-            <li class="form-group__item">
+          <ul class="form-group__list form-group__list--checkbox">
+            <li class="form-group__item form-group__item--checkbox-list-item">
               <input type="checkbox" name="item-bridge" id="bridge" class="form-group__unit" checked>
-              <label for="bridge" class="form-group__label"></label>
+              <label for="bridge" class="form-group__label--non-transform form-group__label--checkbox">Мост Дьявола</label>
             </li>
-            <li class="form-group__item">
+            <li class="form-group__item form-group__item--checkbox-list-item">
               <input type="checkbox" name="item-park" id="park" class="form-group__unit" checked>
-              <label for="park" class="form-group__label"></label>
+              <label for="park" class="form-group__label--non-transform form-group__label--checkbox">Слайд-парк</label>
             </li>
-            <li class="form-group__item">
+            <li class="form-group__item form-group__item--checkbox-list-item">
               <input type="checkbox" name="item-mountain" id="mountain" class="form-group__unit">
-              <label for="mountain" class="form-group__label"></label>
+              <label for="mountain" class="form-group__label--non-transform form-group__label--checkbox">Гора-Колокол</label>
             </li>
-            <li class="form-group__item">
+            <li class="form-group__item form-group__item--checkbox-list-item">
               <input type="checkbox" name="item-red-rocks" id="red-rocks" class="form-group__unit" checked>
-              <label for="red-rocks" class="form-group__label"></label>
+              <label for="red-rocks" class="form-group__label--non-transform form-group__label--checkbox">Красные скалы</label>
             </li>
           </ul>
         </section>
-        <section class="feedback__review form-group">
-          <h2 class="feedback-form__title">
+        <section class="feedback-form__review feedback-form__item form-group">
+          <h2 class="form-group__title">
             Опишите свои эмоции:
           </h2>
-          <textarea rows="5" name="review-area" id="review-field" class="form-group__textarea">
-            Опишите подробно все свои восторги
-          </textarea>
+          <textarea rows="5" name="review-area" id="review-field" class="form-group__textarea">Опишите подробно все свои восторги</textarea>
         </section>
-        <input type="submit" value="Отправить отзыв" class="btn feedback__btn">
+        <input type="submit" value="Отправить отзыв" class="btn feedback-form__btn">
       </form>
     </main>
     <footer class="page-footer">
@@ -153,7 +163,7 @@
             FaceBook
           </a>
         </li>
-        <li class="socialr__social-item social__social-item--youtube">
+        <li class="social__social-item social__social-item--youtube">
           <a href="#">
             YouTube
           </a>
@@ -163,12 +173,12 @@
         <p class="page-footer__text">
           Разработано
         </p>
-        <img src="#" width="30" height="38" alt="developer logo">
+        <img src="img/logo-htmlacademy.svg" width="30" height="38" alt="developer logo">
       </div>
     </footer>
     <div class="pop-up-submision pop-up-submision--succes">
       <h2 class="pop-up-submision__title">
-        Ваш отзыв отрпавлен!
+        Ваш отзыв отправлен!
       </h2>
       <p clas="pop-up-submision__text">
         Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.

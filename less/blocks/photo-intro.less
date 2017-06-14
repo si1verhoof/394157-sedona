@@ -1,0 +1,44 @@
+.photo-intro {
+  outline: 2px solid blue;
+  font-size: 14px;
+  line-height: 24px;
+  color: @color-gray;
+  text-transform: uppercase;
+  padding: 40px 20px 30px;
+  box-sizing: border-box;
+}
+
+.photo-intro__text--title {
+  font-size: 18px;
+  line-height: 26px;
+  color: @color-black;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+
+.photo-intro__text {
+  margin: 0;
+  padding: 0;
+}
+
+@media @tablet-widths {
+
+  .photo-intro {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .photo-intro__text {
+    display: inline-block;
+    vertical-align: center;
+    width: 440px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .photo-intro__text--title {
+    width: 214px;
+  }
+
+}
