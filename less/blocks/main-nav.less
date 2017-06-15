@@ -55,6 +55,30 @@
   font-weight: bold;
 }
 
+.main-nav__item--close-menu::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 15px;
+  right: 3px;
+  width: 24px;
+  height: 24px;
+  border-left: 3.5px solid rgb(255, 255, 255);
+  transform: rotate(45deg);
+}
+
+.main-nav__item--close-menu::after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 15px;
+  right: 19px;
+  width: 24px;
+  height: 24px;
+  border-right: 3.5px solid rgb(255, 255, 255);
+  transform: rotate(-45deg);
+}
+
 @media @tablet-widths {
 
   .main-nav {
@@ -94,6 +118,10 @@
   .main-nav__toggler {
     display: none;
   }
+
+  /*.main-nav__item--close-menu {
+    display: none;
+  }*/
 
 }
 

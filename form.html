@@ -82,14 +82,20 @@
           <h2 class="form-group__title">
             Контактная информация:
           </h2>
-          <label for="input-tel" class="form-group__label">
-            Контактный телефон<sup>*</sup>
-          </label>
-          <input type="tel" class="form-group__tel form-group__input" placeholder="Введите телефон" id="input-tel" required> <!--паттерн нужен?-->
-          <label for="input-email" class="form-group__label">
-            Электронная почта<sup>*</sup>
-          </label>
-          <input type="email" class="contacts__email form-group__input" placeholder="Введите e-mail" id="input-email" required>
+          <ul class="form-group__list form-group__list--input-fields-contacts">
+            <li class="form-group__item form-group__item--input-fields-contacts">
+              <label for="input-tel" class="form-group__label form-group__label--contacts">
+                <span class="form-group__hidden-desktop-version-text">Контактный</span> телефон:<sup>*</sup>
+              </label>
+              <input type="tel" class="form-group__contacts-input form-group__input" placeholder="Введите телефон" id="input-tel" required> <!--паттерн нужен?-->
+            </li>
+            <li class="form-group__item form-group__item--input-fields-contacts">
+              <label for="input-email" class="form-group__label form-group__label--contacts">
+                Электронная почта:<sup>*</sup>
+              </label>
+              <input type="email" class="form-group__contacts-input form-group__input" placeholder="Введите e-mail" id="input-email" required>
+            </li>
+          </ul>
         </section>
         <section class="feedback-form__radio feedback-form__item form-group">
           <h2 class="form-group__title">
@@ -118,7 +124,7 @@
         </section>
         <section class="feedback-form__checkbox feedback-form__item form-group">
           <h2 class="form-group__title">
-            Посещённые достопримечтальности:
+            Посещённые<br> достопримечтальности:
           </h2>
           <ul class="form-group__list form-group__list--checkbox">
             <li class="form-group__item form-group__item--checkbox-list-item">
@@ -177,25 +183,33 @@
       </div>
     </footer>
     <div class="pop-up-submision pop-up-submision--succes">
-      <h2 class="pop-up-submision__title">
-        Ваш отзыв отправлен!
-      </h2>
-      <p clas="pop-up-submision__text">
-        Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.
-      </p>
-      <div class="pop-up-submision_btn btn">
-        Закрыть окно
+      <div class="pop-up-submision__text-field">
+        <h2 class="pop-up-submision__title">
+          Ваш отзыв отправлен!
+        </h2>
+        <p clas="pop-up-submision__text">
+          Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.
+        </p>
+      </div>
+      <div class="pop-up-submision__btn-field">
+        <button class="pop-up-submision_btn btn">
+          Закрыть окно
+        </button>
       </div>
     </div>
     <div class="pop-up-submision pop-up-submision--failure">
-      <h2 class="pop-up-submision__title">
-        Что-то пошло не так!
-      </h2>
-      <p clas="pop-up-submision__text">
-        Проверьте поля, выделенные красным, скорее всего, вы забыли их заполнить
-      </p>
-      <div class="pop-up-submision_btn btn">
-        OK
+      <div class="pop-up-submision__text-field">
+        <h2 class="pop-up-submision__title">
+          Что-то пошло не так!
+        </h2>
+        <p clas="pop-up-submision__text">
+          Проверьте поля, выделенные красным, скорее всего, вы забыли их заполнить
+        </p>
+      </div>
+      <div class="pop-up-submision__btn-field">
+        <button class="pop-up-submision_btn pop-up-submision_btn--short btn">
+          OK
+        </button>
       </div>
     </div>
   </body>

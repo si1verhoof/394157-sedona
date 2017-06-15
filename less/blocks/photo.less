@@ -5,6 +5,7 @@
   line-height: 24px;
   padding: 23px 20px;
   box-sizing: border-box;
+  border-bottom: 1px solid @border-color-lightgray;
 }
 
 .photo__title {
@@ -22,6 +23,7 @@
   line-height: 24px;
   text-transform: uppercase;
   font-weight: bold;
+  padding-left: 40px;
 }
 
 .photo__author {
@@ -30,6 +32,10 @@
 }
 
 @media @tablet-widths {
+
+  .photo {
+    border-bottom: none;
+  }
 
   .photo--main {
     margin-left: 60px;
@@ -51,6 +57,16 @@
 
   .photo--secondary:nth-child(2n) {
     margin-right: 60px;
+  }
+
+  .photo__description {
+    position: relative;
+  }
+
+  .photo__likes-counter {
+    position: absolute;
+    right: 0;
+    bottom: 10px;
   }
 
 }
@@ -82,6 +98,15 @@
 
   .photo--secondary:nth-child(2n) {
     margin-right: 0;
+  }
+
+  .photo__description {
+    padding: 20px;
+  }
+
+  .photo__likes-counter {
+    bottom: 25px;
+    right: 10px;
   }
 
 }

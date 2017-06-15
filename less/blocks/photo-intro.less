@@ -6,6 +6,16 @@
   text-transform: uppercase;
   padding: 40px 20px 30px;
   box-sizing: border-box;
+  text-align: center;
+  border-bottom: 1px solid @border-color-lightgray;
+}
+
+.photo-intro__text {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
 }
 
 .photo-intro__text--title {
@@ -13,13 +23,7 @@
   line-height: 26px;
   color: @color-black;
   font-weight: bold;
-  margin: 0;
-  padding: 0;
-}
-
-.photo-intro__text {
-  margin: 0;
-  padding: 0;
+  margin-bottom: 33px;
 }
 
 @media @tablet-widths {
@@ -27,6 +31,8 @@
   .photo-intro {
     display: flex;
     flex-direction: column;
+    border-bottom: none;
+    padding-bottom: 70px;
   }
 
   .photo-intro__text {
@@ -39,6 +45,7 @@
 
   .photo-intro__text--title {
     width: 214px;
+    margin-bottom: 33px;
   }
 
 }
