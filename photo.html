@@ -12,10 +12,11 @@
       </h1>
       <nav class="main-nav">
         <ul class="main-nav__list">
-          <li class="main-nav__item main-nav__item--close-menu">
+          <li class="main-nav__item">
             <a href="index.html" class="main-nav__link main-nav__link--active">
               Главная
             </a>
+            <div class="main-nav__close-menu main-nav__close-menu--hidden"></div>
           </li>
           <li class="main-nav__item">
             <a class="main-nav__link">
@@ -36,7 +37,7 @@
         <div class="main-nav__logo">
           <img src="img/logo-sedona-mobile.svg" alt="logo" width="102" height="84">
         </div>
-        <div class="main-nav__toggler">
+        <div class="main-nav__toggler main-nav__toggler--hidden">
           <span class="toggler"></span> <!-- Только для мобильной версии -->
         </div>
       </nav>
@@ -52,7 +53,9 @@
         </p>
       </div>
       <section class="photo photo--main">
-        <img src="img/photo-1-mobile@1x.jpg" width="280" height="280" class="photo__content" alt="Хайвей и закат">
+        <div class="photo__cover">
+          <img src="img/photo-1-mobile@1x.jpg" width="280" height="280" class="photo__content" alt="Хайвей и закат">
+        </div>
         <div class="photo__description">
           <h2 class="photo__title">
             Неродные просторы
@@ -66,7 +69,9 @@
         </div>
       </section>
       <section class="photo photo--secondary">
-        <img src="img/photo-2-mobile@1x.jpg" width="280" height="280" class="photo__content" alt="Флора">
+        <div class="photo__content-secondary">
+          <img src="img/photo-2-mobile@1x.jpg" width="280" height="280" class="photo__content" alt="Флора">
+        </div>
         <div class="photo__description">
           <h2 class="photo__title">
             Местная растительность
@@ -80,7 +85,9 @@
         </div>
       </section>
       <section class="photo photo--secondary">
-        <img src="img/photo-3-mobile@1x.jpg" width="280" height="280" class="photo__content" alt="Серпантин">
+        <div class="photo__content-secondary">
+          <img src="img/photo-3-mobile@1x.jpg" width="280" height="280" class="photo__content" alt="Серпантин">
+        </div>
         <div class="photo__description">
           <h2 class="photo__title">
             Дорога на север
@@ -94,8 +101,10 @@
         </div>
       </section>
       <section class="photo photo--secondary">
-        <img src="img/photo-4-mobile@1x.jpg" width="280" height="280" class="photo__content" alt="Мост дьявола">
-        <div class="photo__description">
+        <div class="photo__content-secondary">
+          <img src="img/photo-4-mobile@1x.jpg" width="280" height="280" class="photo__content" alt="Мост дьявола">
+        </div>
+          <div class="photo__description">
           <h2 class="photo__title">
             Мост дьявола
           </h2>

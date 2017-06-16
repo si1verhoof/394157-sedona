@@ -12,10 +12,11 @@
       </h1>
       <nav class="main-nav">
         <ul class="main-nav__list">
-          <li class="main-nav__item main-nav__item--close-menu">
+          <li class="main-nav__item">
             <a href="index.html" class="main-nav__link main-nav__link--active">
               Главная
             </a>
+            <div class="main-nav__close-menu main-nav__close-menu--hidden"></div>
           </li>
           <li class="main-nav__item">
             <a href="photo.html" class="main-nav__link">
@@ -36,7 +37,7 @@
         <div class="main-nav__logo">
           <img src="img/logo-sedona-mobile.svg" alt="logo" width="102" height="84">
         </div>
-        <div class="main-nav__toggler">
+        <div class="main-nav__toggler main-nav__toggler--hidden">
           <span class="toggler"></span> <!-- Только для мобильной версии -->
         </div>
       </nav>
@@ -103,19 +104,19 @@
           </h2>
           <ul class="form-group__list">
             <li class="form-group__item">
-              <input type="radio" name="positive-feedback" id="positive" class="form-group__unit" checked>
+              <input type="radio" name="radio-feedback" id="positive" class="form-group__unit" checked>
               <label for="positive" class="form-group__label form-group__label--radio form-group__label--non-transform">
                 Скорее положительное
               </label>
             </li>
             <li class="form-group__item">
-              <input type="radio" name="negative-feedback" id="negative" class="form-group__unit">
+              <input type="radio" name="radio-feedback" id="negative" class="form-group__unit">
               <label for="negative" class="form-group__label--non-transform form-group__label--radio">
                 Скорее отрицательное
               </label>
             </li>
             <li class="form-group__item">
-              <input type="radio" name="no-answer-feedback" id="no-answer" class="form-group__unit">
+              <input type="radio" name="radio-feedback" id="no-answer" class="form-group__unit">
               <label for="no-answer" class="form-group__label--non-transform form-group__label--radio">
                 Затрудняюсь ответить
               </label>

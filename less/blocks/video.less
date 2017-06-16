@@ -5,6 +5,13 @@
   line-height: 24px;
   text-transform: uppercase;
   padding: 35px 20px 0;
+  video {
+    width: 320px;
+    height: 200px;
+    outline: 2px solid yellow;
+    margin-left: -20px;
+    margin-top: 35px;
+  }
 }
 
 .video__text--title {
@@ -15,13 +22,30 @@
   padding: 0;
 }
 
-.video video {
-  padding: -20px 0;
-  margin-top: 35px;
-}
-
 @media @tablet-widths {
 
-  min-height: 745px;
+  .video {
+    min-height: 745px;
+    video {
+      width: 648px;
+      height: 500px;
+      outline: 2px solid yellow;
+      margin: 0 40px;
+    }
+  }
 
+}
+
+@media @desktop-widths {
+  
+  .video {
+    min-height: 745px;
+    video {
+      width: 800px;
+      height: 500px;
+      outline: 2px solid yellow;
+      margin: 0 180px;
+    }
+  }
+  
 }
