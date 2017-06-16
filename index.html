@@ -12,10 +12,11 @@
       </h1>
       <nav class="main-nav">
         <ul class="main-nav__list">
-          <li class="main-nav__item main-nav__item--close-menu">
+          <li class="main-nav__item">
             <a class="main-nav__link main-nav__link--active">
               Главная
             </a>
+            <div class="main-nav__close-menu main-nav__close-menu--hidden"></div>
           </li>
           <li class="main-nav__item">
             <a href="photo.html" class="main-nav__link">
@@ -36,7 +37,7 @@
         <div class="main-nav__logo">
           <img src="img/logo-sedona-mobile.svg" alt="logo" width="102" height="84">
         </div>
-        <div class="main-nav__toggler">
+        <div class="main-nav__toggler main-nav__toggler--hidden">
           <span class="toggler"></span> <!-- Только для мобильной версии -->
         </div>
       </nav>
@@ -181,10 +182,12 @@
         </li>
       </ul>
       <div class="page-footer__site-developer">
-        <p class="page-footer__text">
+        <p class="page-footer__text page-footer__developer-info-item">
           Разработано
         </p>
-        <img src="img/logo-htmlacademy.svg" width="30" height="38" alt="developer logo">
+        <a href="https://htmlacademy.ru/intensive/adaptive" class="page-footer__developer-info-item">
+          <img src="img/logo-htmlacademy.svg" width="30" height="38" alt="developer logo">
+        </a>
       </div>
     </footer>
   </body>

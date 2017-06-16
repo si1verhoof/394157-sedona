@@ -22,6 +22,10 @@
   bottom: 10px;
 }
 
+.main-nav__toggler--hidden {
+  display: none;
+}
+
 .main-nav__item {
   background-color: @bg-color;
   list-style: none;
@@ -53,6 +57,34 @@
   font-size: 18px;
   line-height: 40px;
   font-weight: bold;
+}
+
+.main-nav__close-menu::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 15px;
+  right: 3px;
+  width: 24px;
+  height: 24px;
+  border-left: 3.5px solid rgb(255, 255, 255);
+  transform: rotate(45deg);
+}
+
+.main-nav__close-menu::after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 15px;
+  right: 19px;
+  width: 24px;
+  height: 24px;
+  border-right: 3.5px solid rgb(255, 255, 255);
+  transform: rotate(-45deg);
+}
+
+.main-nav__close-menu--hidden {
+  display: none;
 }
 
 @media @tablet-widths {
@@ -92,6 +124,11 @@
   }
 
   .main-nav__toggler {
+    display: none;
+  }
+
+  .main-nav__close-menu::before,
+  .main-nav__close-menu::after {
     display: none;
   }
 

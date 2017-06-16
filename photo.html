@@ -12,10 +12,11 @@
       </h1>
       <nav class="main-nav">
         <ul class="main-nav__list">
-          <li class="main-nav__item main-nav__item--close-menu">
+          <li class="main-nav__item">
             <a href="index.html" class="main-nav__link main-nav__link--active">
               Главная
             </a>
+            <div class="main-nav__close-menu main-nav__close-menu--hidden"></div>
           </li>
           <li class="main-nav__item">
             <a class="main-nav__link">
@@ -36,7 +37,7 @@
         <div class="main-nav__logo">
           <img src="img/logo-sedona-mobile.svg" alt="logo" width="102" height="84">
         </div>
-        <div class="main-nav__toggler">
+        <div class="main-nav__toggler main-nav__toggler--hidden">
           <span class="toggler"></span> <!-- Только для мобильной версии -->
         </div>
       </nav>
@@ -52,55 +53,71 @@
         </p>
       </div>
       <section class="photo photo--main">
-        <img src="img/photo-1-mobile@1x.jpg" width="280" height="280" class="photo__content" alt="Хайвей и закат">
-        <h2 class="photo__title">
-          Неродные просторы
-        </h2>
-        <p class="photo__author">
-          Автор фото: Борис
-        </p>
-        <div class="photo__likes-counter">
-          1350
+        <div class="photo__cover">
+          <img src="img/photo-1-mobile@1x.jpg" width="280" height="280" class="photo__content" alt="Хайвей и закат">
+        </div>
+        <div class="photo__description">
+          <h2 class="photo__title">
+            Неродные просторы
+          </h2>
+          <p class="photo__author">
+            Автор фото: Борис
+          </p>
+          <div class="photo__likes-counter">
+            1350
+          </div>
         </div>
       </section>
       <section class="photo photo--secondary">
-        <img src="img/photo-2-mobile@1x.jpg" width="280" height="280" class="photo__content" alt="Флора">
-        <h2 class="photo__title">
-          Местная растительность
-        </h2>
-        <p class="photo__author">
-          Автор фото: Сергей
-        </p>
-        <div class="photo__likes-counter">
-          143
+        <div class="photo__content-secondary">
+          <img src="img/photo-2-mobile@1x.jpg" width="280" height="280" class="photo__content" alt="Флора">
+        </div>
+        <div class="photo__description">
+          <h2 class="photo__title">
+            Местная растительность
+          </h2>
+          <p class="photo__author">
+            Автор фото: Сергей
+          </p>
+          <div class="photo__likes-counter">
+            143
+          </div>
         </div>
       </section>
       <section class="photo photo--secondary">
-        <img src="img/photo-3-mobile@1x.jpg" width="280" height="280" class="photo__content" alt="Серпантин">
-        <h2 class="photo__title">
-          Дорога на север
-        </h2>
-        <p class="photo__author">
-          Автор фото: Пётр
-        </p>
-        <div class="photo__likes-counter">
-          96
+        <div class="photo__content-secondary">
+          <img src="img/photo-3-mobile@1x.jpg" width="280" height="280" class="photo__content" alt="Серпантин">
+        </div>
+        <div class="photo__description">
+          <h2 class="photo__title">
+            Дорога на север
+          </h2>
+          <p class="photo__author">
+            Автор фото: Пётр
+          </p>
+          <div class="photo__likes-counter">
+            96
+          </div>
         </div>
       </section>
       <section class="photo photo--secondary">
-        <img src="img/photo-4-mobile@1x.jpg" width="280" height="280" class="photo__content" alt="Мост дьявола">
-        <h2 class="photo__title">
-          Мост дьявола
-        </h2>
-        <p class="photo__author">
-          Автор фото: Антон
-        </p>
-        <div class="photo__likes-counter">
-          254
+        <div class="photo__content-secondary">
+          <img src="img/photo-4-mobile@1x.jpg" width="280" height="280" class="photo__content" alt="Мост дьявола">
+        </div>
+          <div class="photo__description">
+          <h2 class="photo__title">
+            Мост дьявола
+          </h2>
+          <p class="photo__author">
+            Автор фото: Антон
+          </p>
+          <div class="photo__likes-counter">
+            254
+          </div>
         </div>
       </section>
       <section class="video">
-        <h2 class="video__title">
+        <h2 class="video__text video__text--title">
           Всё ещё сомневаетесь?
         </h2>
         <p class="video__text">
@@ -131,10 +148,12 @@
         </li>
       </ul>
       <div class="page-footer__site-developer">
-        <p class="page-footer__text">
+        <p class="page-footer__text page-footer__developer-info-item">
           Разработано
         </p>
-        <img src="img/logo-htmlacademy.svg" width="30" height="38" alt="developer logo">
+        <a href="https://htmlacademy.ru/intensive/adaptive" class="page-footer__developer-info-item">
+          <img src="img/logo-htmlacademy.svg" width="30" height="38" alt="developer logo">
+        </a>
       </div>
     </footer>
   </body>
