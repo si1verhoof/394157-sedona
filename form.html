@@ -11,34 +11,36 @@
         Добро пожаловать в Седону!
       </h1>
       <nav class="main-nav">
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a href="index.html" class="main-nav__link main-nav__link--active">
-              Главная
-            </a>
-            <div class="main-nav__close-menu main-nav__close-menu--hidden"></div>
-          </li>
-          <li class="main-nav__item">
-            <a href="photo.html" class="main-nav__link">
-              Фото и видео
-            </a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link">
-              Форма отзыва
-            </a>
-          </li>
-          <li class="main-nav__item">
-            <a href="#" class="main-nav__link">
-              HTML Academy
-            </a>
-          </li>
-        </ul>
+        <div class="main-nav__mobile-menu-vision">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a href="index.html" class="main-nav__link main-nav__link--active">
+                Главная
+              </a>
+              <div class="main-nav__close-menu main-nav__close-menu--hidden"></div>
+            </li>
+            <li class="main-nav__item">
+              <a href="photo.html" class="main-nav__link">
+                Фото и видео
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link">
+                Форма отзыва
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link">
+                HTML Academy
+              </a>
+            </li>
+          </ul>
+          <div class="main-nav__toggler main-nav__toggler--hidden">
+            <span class="toggler"></span> <!-- Только для мобильной версии -->
+          </div>
+        </div>
         <div class="main-nav__logo">
           <img src="img/logo-sedona-mobile.svg" alt="logo" width="102" height="84">
-        </div>
-        <div class="main-nav__toggler main-nav__toggler--hidden">
-          <span class="toggler"></span> <!-- Только для мобильной версии -->
         </div>
       </nav>
       <div class="page-header__background-image page-header__background-image--short"></div>
@@ -215,5 +217,6 @@
         </button>
       </div>
     </div>
+    <script src="js/script.js"></script>
   </body>
 </html>

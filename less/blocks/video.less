@@ -1,17 +1,15 @@
 .video {
   outline: 2px solid green;
   color: @color-gray;
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 0px;
+  line-height: 0px;
   text-transform: uppercase;
   padding: 35px 20px 0;
-  video {
-    width: 320px;
-    height: 200px;
-    outline: 2px solid yellow;
-    margin-left: -20px;
-    margin-top: 35px;
-  }
+}
+
+.video__text {
+  font-size: 14px;
+  line-height: 24px;
 }
 
 .video__text--title {
@@ -22,10 +20,64 @@
   padding: 0;
 }
 
+.video__content {
+  position: relative;
+  video {
+    width: 320px;
+    height: 200px;
+    outline: 2px solid yellow;
+    margin-left: -20px;
+    margin-top: 35px;
+    margin-bottom: 66px;
+  }
+}
+
+/* Панелька */
+.video__control-panel {
+  outline: 1px solid teal;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 0;
+}
+
+.video__panel-button {
+  outline: 1px solid lightgray;
+  padding-top: 23px;
+  padding-bottom: 23px;
+}
+
+.video__panel-button--time-bar {
+  width: 234px;
+  background: none;
+  background-color: @bg-color-darkest-translucent;
+  order: -1;
+  padding-left: 23px;
+  padding-right: 23px;
+}
+
+.video__panel-button--repeat {
+  height: 20px;
+  background-color: @bg-color-lightgray;
+  flex-grow: 1;
+}
+
+.video__panel-button--subtitles {
+  height: 20px;
+  background-color: @bg-color-lightgray;
+}
+
+.video__panel-button--fullscreen {
+  height: 20px;
+  background-color: @bg-color-lightgray;
+}
+
 @media @tablet-widths {
 
-  .video {
-    min-height: 745px;
+  .video__content {
     video {
       width: 648px;
       height: 500px;
@@ -34,12 +86,31 @@
     }
   }
 
+  .video__control-panel {
+    width: 648px;
+    flex-wrap: nowrap;
+    left: 40px;
+    background-color: @bg-color-darkest-translucent;
+  }
+  
+  .video__panel-button {
+    background-color: transparent;
+  }
+
+  .video__panel-button--time-bar {
+    width: 390px;
+    order: 0;
+  }
+
+  .video__panel-button--repeat {
+    flex-grow: 0;
+  }
+
 }
 
 @media @desktop-widths {
 
-  .video {
-    min-height: 745px;
+  .video__content {
     video {
       width: 800px;
       height: 500px;
@@ -48,4 +119,11 @@
     }
   }
 
+  .video__control-panel {
+    width: 800px;
+    flex-wrap: nowrap;
+    left: 180px;
+  }
+
 }
+  
