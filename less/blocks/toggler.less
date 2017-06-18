@@ -1,4 +1,4 @@
-.toggler {
+.toggler--open {
   display: block;
   height: 4px;
   width: 23px;
@@ -19,4 +19,28 @@
   &::after {
     transform: translateY(4.5px);
   }
+}
+
+.toggler__close::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0;
+  right: 3px;
+  width: 24px;
+  height: 24px;
+  border-left: 3.5px solid rgb(255, 255, 255);
+  transform: rotate(45deg);
+}
+
+.toggler__close::after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0;
+  right: 19px;
+  width: 24px;
+  height: 24px;
+  border-right: 3.5px solid rgb(255, 255, 255);
+  transform: rotate(-45deg);
 }
