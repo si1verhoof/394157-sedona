@@ -23,7 +23,8 @@
   line-height: 24px;
   text-transform: uppercase;
   font-weight: bold;
-  padding-left: 40px;
+  display: flex;
+  align-content: center;
 }
 
 .photo__author {
@@ -44,6 +45,10 @@
 .photo__description {
   display: flex;
   flex-direction: column;
+}
+
+.photo__icon-like {
+  margin-right: 10px;
 }
 
 @media @tablet-widths {
@@ -69,6 +74,11 @@
     flex-direction: row;
     align-items: center;
     padding: 20px;
+    background-color: @bg-color-lightgray;
+  }
+
+  .photo__description--darker-back {
+    background-color: @bg-color-little-darker;
   }
 
   .photo__cover {
@@ -140,6 +150,10 @@
   .photo__content-secondary {
     width: 400px;
     height: 267px;
+  }
+
+  .photo__icon-like {
+    fill: @color-white;
   }
 
 }

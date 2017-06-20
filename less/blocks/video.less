@@ -22,11 +22,10 @@
 
 .video__content {
   position: relative;
-  video {
+  img {
     width: 320px;
     height: 200px;
     outline: 2px solid yellow;
-    margin-left: -20px;
     margin-top: 35px;
     margin-bottom: 66px;
   }
@@ -45,7 +44,6 @@
 }
 
 .video__panel-button {
-  outline: 1px solid lightgray;
   padding-top: 23px;
   padding-bottom: 23px;
 }
@@ -60,29 +58,51 @@
 }
 
 .video__panel-button--repeat {
+  padding-left: 20px;
   height: 20px;
-  /*background-color: @bg-color-lightgray;*/
-  background-color: orangered;
+  background-color: @bg-color-lightgray;
+  flex-grow: 0.7;
 }
 
 .video__panel-button--subtitles {
   height: 20px;
   width: 20px;
-  background-color: skyblue;
+  background-color: @bg-color-lightgray;
   flex-grow: 0.15;
 }
 
 .video__panel-button--fullscreen {
   height: 20px;
   width: 20px;
-  background-color: greenyellow;
+  background-color: @bg-color-lightgray;
   flex-grow: 0.15;
+}
+
+/* Полоса прокрутки */
+
+
+.video__time-bar {
+  height: 4px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.video__time-bar-toggle {
+  width: 15px;
+  height: 15px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  position: absolute;
+  cursor: pointer;
+  top: 17px;
+  left: 23%;
+  transition-property: all;
 }
 
 @media @tablet-widths {
 
   .video__content {
-    video {
+    img {
       width: 648px;
       height: 500px;
       outline: 2px solid yellow;
@@ -110,12 +130,28 @@
     flex-grow: 0;
   }
 
+  .video__panel-button--time-bar {
+    width: 390px;
+  }
+
+  .video__icons-color {
+    fill: @color-white;
+  }
+
+  .video__time-bar {
+    margin-top: 10px;
+  }
+
+  .video__time-bar-toggle {
+    top: 27px;
+  }
+
 }
 
 @media @desktop-widths {
 
   .video__content {
-    video {
+    img {
       width: 800px;
       height: 500px;
       outline: 2px solid yellow;
@@ -127,6 +163,10 @@
     width: 800px;
     flex-wrap: nowrap;
     left: 180px;
+  }
+
+  .video__panel-button--time-bar {
+    width: 540px;
   }
 
 }

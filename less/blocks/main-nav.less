@@ -9,7 +9,7 @@
 .main-nav__list {
   margin: 0;
   padding:0;
-  min-height: 224px;
+  padding-bottom: 56px;
 }
 
 .main-nav__toggler {
@@ -67,17 +67,21 @@
   display: none;
 }
 
+.main-nav__logo-img {
+  width: 102px;
+  height: 83px;
+}
+
 @media @tablet-widths {
 
   .main-nav {
     width: 100%;
-    min-height: 70px;
     margin: 0;
   }
 
   .main-nav__list {
-    min-height: 60px;
     display: flex;
+    padding-bottom: 0;
   }
 
   .main-nav__item {
@@ -112,6 +116,11 @@
     display: none;
   }
 
+  .main-nav__logo-img {
+    width: 102px;
+    height: 83px;
+  }
+
 }
 
 @media @desktop-widths {
@@ -125,7 +134,7 @@
   }
 
   .main-nav__item:nth-child(2) {
-    margin-right: 100px; /*Временно, потом буду ровнять*/
+    margin-right: 250px; /*Временно, потом буду ровнять*/
   }
 
   .main-nav__toggler {
@@ -136,6 +145,11 @@
     position: absolute;
     top: 0;
     left: 50%; /* Повтор строки 28 */
+  }
+
+  .main-nav__logo-img {
+    width: 188px;
+    height: 96px;
   }
 
 }
