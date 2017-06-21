@@ -1,14 +1,14 @@
 .feedback-intro {
-  outline: 2px solid orange;
   color: @color-gray;
   font-size: 14px;
   line-height: 24px;
   text-transform: uppercase;
-  padding-top: 40px;
+  padding-top: 35px;
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 20px;
   text-align: center;
+  border-bottom: 1px solid @border-color-lightgray;
 }
 
 .feedback-intro__text {
@@ -18,13 +18,14 @@
   vertical-align: middle;
   margin: 0 auto;
   text-align: center;
+  width: auto;
 }
 
 .feedback-intro__texto--title {
   font-size: 18px;
   line-height: 26px;
   color: @color-black;
-  margin-bottom: 30px;
+  margin-bottom: 26px;
 }
 
 @media @tablet-widths {
@@ -32,6 +33,7 @@
   .feedback-intro {
     display: flex;
     flex-direction: column;
+    border-bottom: none;
   }
 
   .feedback-intro__text {

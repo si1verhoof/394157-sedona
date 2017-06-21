@@ -1,10 +1,14 @@
 .form-group {
-  outline: 2px solid violet;
   color: @color-gray;
   font-size: 14px;
   line-height: 24px;
   text-transform: uppercase;
-  padding: 20px 20px 45px;
+  padding: 15px 20px 45px;
+  border-bottom: 1px solid @border-color-lightgray;
+}
+
+.form-group:last-child {
+  border-bottom: none;
 }
 
 .form-group__title {
@@ -44,11 +48,13 @@
 .form-group__input {
   padding-top: 19px;
   padding-bottom: 18px;
-  padding-left: 21px;
+  padding-left: 30px;
   border: none;
   background-color: rgb(242, 242, 242);
   flex-grow: 1;
   margin-left: 13px;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 .form-group__contacts-input {
@@ -209,6 +215,11 @@
     width: 648px;
     margin-left: -20px;
   }
+
+  .form-group {
+    border-bottom: none;
+  }
+
 }
 
 @media @desktop-widths {

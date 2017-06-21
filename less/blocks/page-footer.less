@@ -1,7 +1,6 @@
 .page-footer {
   font-size: 14px;
   line-height: 26px;
-  outline: 2px solid lightgreen;
   text-transform: uppercase;
   padding: 35px 20px 35px;
 }
@@ -54,6 +53,28 @@
 
   .page-footer__social-list {
     margin-bottom: 0;
+  }
+
+}
+
+@media @desktop-widths { 
+
+  .page-footer {
+    justify-content: space-between;
+  }
+
+  .page-footer--item {
+    width: auto;
+  }
+
+  .page-footer__tag {
+    margin: auto 0;
+    padding-left: 130px;
+  }
+
+  .page-footer__site-developer {
+    margin-right: 40px;
+    margin-left: 90px;
   }
 
 }
