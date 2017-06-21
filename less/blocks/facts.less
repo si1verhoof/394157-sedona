@@ -4,13 +4,24 @@
 }
 
 .facts__item {
-  padding: 40px 20px;
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
   box-sizing: border-box;
   outline: 2px solid lightblue;
   svg {
     display: inline-block;
     vertical-align: top;
   }
+}
+
+.facts__item--icon-souvenir,
+.facts__item--icon-food {
+  padding-top: 22px;
+}
+
+.facts__item--icon-food {
+  margin-bottom: 40px;
 }
 
 .facts__text {
@@ -23,19 +34,19 @@
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: 14px;
   margin-top: 5px;
-  padding-left: 16px;
+  padding-left: 8px;
   display: inline-block;
   vertical-align: middle;
 }
 
-.facts__text--title--souvenir {
-  padding-left: 20px;
+.facts__text--title-souvenir {
+  padding-left: 15px;
 }
 
-.facts__text--title--food {
-  padding-left: 14px;
+.facts__text--title-food {
+  padding-left: 8px;
 }
 
 @media @tablet-widths {
@@ -63,13 +74,25 @@
     display: inline-block;
     vertical-align: middle;
     text-align: center;
+    margin-bottom: 60px;
   }
 
   .facts__text--title {
     padding-left: 0;
-    margin-top: 20px;
+    margin-top: 24px;
     width: 100%;
     text-align: center;
+    font-size: 21px;
+    margin-bottom: 22px;
+  }
+
+  .facts__text--title-souvenir,
+  .facts__text--title-food {
+    margin-top: 30px;
+  }
+
+  .fact__icon {
+    margin-top: 30px;
   }
 
   .facts__icon--house {
@@ -80,13 +103,16 @@
   .facts__icon--food {
     width: 77px;
     height: 68px;
-    margin-tio: 4px;
+    margin-top: 38px;
   }
 
   .facts__icon--souvenir {
     width: 64px;
     height: 75px;
-    margin: -4px;
+  }
+
+  .facts__item--icon-food {
+    margin-bottom: 0;
   }
 
 }

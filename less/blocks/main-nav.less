@@ -59,7 +59,7 @@
   font-family: "PT Sans", "Verdana", sans-serif;
   text-decoration: none;
   font-size: 18px;
-  line-height: 40px;
+  line-height: 54px;
   font-weight: bold;
 }
 
@@ -90,21 +90,29 @@
     &:last-child {
       box-shadow: none;
     };
+    margin-left: 17px;
   }
 
   .main-nav__link {
     color: @color-black;
     padding: 21px 30px;
+    font-size: 14px;
   }
 
   .main-nav__item:nth-child(2) {
-    margin-right: 120px; /*Временно, потом буду ровнять*/
+    margin-left: 20px;
+    margin-right: 157px; /*Временно, потом буду ровнять*/
+  }
+
+  .main-nav__item:nth-child(n+3) {
+    margin-left: 0; 
   }
 
   .main-nav__logo {
     position: absolute;
     top: 0;
-    left: 50%; /* Повтор строки 28 */
+    left: 50%;
+    margin-left: -51px;
   }
 
   .main-nav__toggler {
@@ -133,8 +141,16 @@
     padding: 21px 80px;
   }
 
+  .main-nav__item {
+    margin-left: 12px;
+  }
+
   .main-nav__item:nth-child(2) {
-    margin-right: 250px; /*Временно, потом буду ровнять*/
+    margin-right: 240px; /*Временно, потом буду ровнять*/
+  }
+
+  .main-nav__item:last-child {
+    margin-left: -7px;
   }
 
   .main-nav__toggler {
@@ -144,7 +160,8 @@
   .main-nav__logo {
     position: absolute;
     top: 0;
-    left: 50%; /* Повтор строки 28 */
+    left: 50%;
+    margin-left: -94px;
   }
 
   .main-nav__logo-img {

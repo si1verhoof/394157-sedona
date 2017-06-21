@@ -9,6 +9,10 @@
   box-sizing: border-box;
 }
 
+.feedback-form__validation-comment {
+  display: none;
+}
+
 @media @tablet-widths {
 
   .feedback-form {
@@ -30,6 +34,20 @@
 
   .feedback-form__radio {
     order: -1;
+  }
+
+  .feedback-form__validation-comment {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 14px;
+    line-height: 26px;
+    color: @color-gray;
+    text-transform: uppercase;
+    margin-left: auto;
+  }
+
+  .feedback-form__btn {
+    margin: 0;
   }
 
 }

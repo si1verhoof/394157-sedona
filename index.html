@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -134,20 +135,22 @@
             Настоящий городок
           </h2>
           <div class="advantage-head__text avantage-head__text--number">
-            &#8211; № 1 &#8211;
+            &#8211; №1 &#8211;
           </div>
           <p class="advantage-head__text">
             Седона не аттракцион для туристов, там течёт своя жизнь
           </p>
         </div>
-        <picture>
-          <source media="(min-width: 1200px)" srcset="img/photo-city@1x.jpg 1x, img/photo-city@2x.jpg 2x">
-          <source media="(min-width: 768px)" srcset="img/photo-city-tablet@1x.jpg 1x, img/photo-city-tablet@2x.jpg 2x">
-          <img src="img/photo-city-mobile@1x.jpg" srcset="img/photo-city-mobile@2x.jpg 2x" alt="Городской пейзаж" class="photo__content">
-        </picture>
+        <div class="avantage__img">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/photo-city@1x.jpg 1x, img/photo-city@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/photo-city-tablet@1x.jpg 1x, img/photo-city-tablet@2x.jpg 2x">
+            <img src="img/photo-city-mobile@1x.jpg" srcset="img/photo-city-mobile@2x.jpg 2x" alt="Городской пейзаж" class="photo__content">
+          </picture>
+        </div>
         <div class="advantage__detail facts">
           <div class="facts__item facts__item--icon-house">
-            <svg width="32" height="33" fill="rgb(129, 179, 210)" class="fact__icon facts__icon--house"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-house"></use></svg>
+            <svg width="39" height="37" fill="rgb(129, 179, 210)" class="fact__icon facts__icon--house"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-house"></use></svg>
             <div class="facts__text facts__text--title">
               Жильё
             </div>
@@ -156,8 +159,8 @@
             </p>
           </div>
           <div class="facts__item facts__item--icon-souvenir">
-            <svg width="27" height="32" fill="rgb(129, 179, 210)" class="fact__icon facts__icon--souvenir"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-gift"></use></svg>
-            <div class="facts__text facts__text--title facts__text--title--souvenir">
+            <svg width="32" height="38" fill="rgb(129, 179, 210)" class="fact__icon facts__icon--souvenir"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-gift"></use></svg>
+            <div class="facts__text facts__text--title facts__text--title-souvenir">
               Сувениры
             </div>
             <p class="facts__text">
@@ -165,12 +168,12 @@
             </p>
           </div>
           <div class="facts__item facts__item--icon-food">
-            <svg width="35" height="32" fill="rgb(129, 179, 210)" class="fact__icon facts__icon--food"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-burger"></use></svg>
-            <div class="facts__text facts__text--title facts__text--title--food">
+            <svg width="40" height="35" fill="rgb(129, 179, 210)" class="fact__icon facts__icon--food"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-burger"></use></svg>
+            <div class="facts__text facts__text--title facts__text--title-food">
               Еда
             </div>
             <p class="facts__text">
-              Всегда заказывайте фирменный, вы не разочаруетесь!
+              Всегда заказывайте фирменный бургер, вы не разочаруетесь!
             </p>
           </div>
         </div>
@@ -181,49 +184,51 @@
             Там есть Мост дьявола
           </h2>
           <div class="advantage-head__text avantage-head__text--number">
-            &#8211; № 2 &#8211;
+            &#8211; №2 &#8211;
           </div>
           <p class="advantage-head__text">
             Да, по нему можно пройти! Если вы осмелитесь, конечно
           </p>
         </div>
-        <picture>
-          <source media="(min-width: 1200px)" srcset="img/photo-bridge@1x.jpg 1x, img/photo-bridge@2x.jpg 2x">
-          <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
-          <img src="img/photo-bridge-mobile@1x.jpg" srcset="img/photo-bridge-mobile@2x.jpg 2x" alt="Природный пейзаж" class="photo__content">
-        </picture>
+        <div class="avantage__img">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/photo-bridge@1x.jpg 1x, img/photo-bridge@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
+            <img src="img/photo-bridge-mobile@1x.jpg" srcset="img/photo-bridge-mobile@2x.jpg 2x" alt="Природный пейзаж" class="photo__content">
+          </picture>
+        </div>
       </section>
       <section class="advantage advantage--short">
         <div class="advantage__item--short">
-          <h2 class="advantage-head__text advantage-head__text--head advantage-head__text--short">
+          <h2 class="advantage-head__text advantage-head__text--head advantage-head__text--short-head">
             Небольшая площадь
           </h2>
-          <div class="advantage-head__text avantage-head__text--number">
-            &#8211; № 3 &#8211;
+          <div class="advantage-head__text advantage-head__text--short avantage-head__text--number">
+            &#8211; №3 &#8211;
           </div>
-          <p class="advantage-head__text">
+          <p class="advantage-head__text advantage-head__text--short">
             Все интересные места находятся очень близко
           </p>
         </div>
         <div class="advantage__item--short">
-          <h2 class="advantage-head__text advantage-head__text--head advantage-head__text--short">
+          <h2 class="advantage-head__text advantage-head__text--head advantage-head__text--short-head">
             Красивая дорога
           </h2>
-          <div class="advantage-head__text avantage-head__text--number">
-            &#8211; № 4 &#8211;
+          <div class="advantage-head__text advantage-head__text--short avantage-head__text--number">
+            &#8211; №4 &#8211;
           </div>
           <p class="advantage-head__text">
             Ехать в Седону из Лас Вегаса совсем не скучно!
           </p>
         </div>
         <div class="advantage__item--short">
-          <h2 class="advantage-head__text advantage-head__text--head advantage-head__text--short">
+          <h2 class="advantage-head__text advantage-head__text--head advantage-head__text--short-head">
             Мало туристов
           </h2>
-          <div class="advantage-head__text avantage-head__text--number">
-            &#8211; № 5 &#8211;
+          <div class="advantage-head__text advantage-head__text--short avantage-head__text--number">
+            &#8211; №5 &#8211;
           </div>
-          <p class="advantage-head__text">
+          <p class="advantage-head__text advantage-head__text--short">
             Большинство едет в Гранд Каньон и толпится там
           </p>
         </div>
@@ -273,7 +278,7 @@
           Разработано
         </p>
         <a href="https://htmlacademy.ru/intensive/adaptive" class="page-footer__developer-info-item">
-          <img src="img/logo-htmlacademy.svg" width="30" height="38" alt="developer logo">
+          <img src="img/logo-htmlacademy.svg" width="27" height="34" alt="developer logo">
         </a>
       </div>
     </footer>
