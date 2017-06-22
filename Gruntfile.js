@@ -5,6 +5,11 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks("grunt-browser-sync");
   grunt.loadNpmTasks("grunt-contrib-watch");
   grunt.loadNpmTasks("grunt-postcss");
+  grunt.loadNpmTasks("grunt-contrib-clean");
+  grunt.loadNpmTasks("grunt-contrib-copy");
+  grunt.loadNpmTasks("grunt-contrib-imagemin");
+  grunt.loadNpmTasks("grunt-svgmin");
+  grunt.loadNpmTasks("grunt-svgstore");
 
   grunt.initConfig({
     less: {
@@ -56,12 +61,8 @@ module.exports = function(grunt) {
         files: ["less/**/*.less"],
         tasks: ["less", "postcss", "csso"]
       }
-    }
-  });
-
-  grunt.registerTask("serve", ["browserSync", "watch"]);
-
-  grunt.initConfig({
+    },
+  
     copy: {
       build: {
         files: [{
@@ -82,20 +83,16 @@ module.exports = function(grunt) {
           dest: "build"
         }]
       } 
-    }
-  });
+    },
 
-  grunt.initConfig({
     less: {
       style: {
         files: {
           "build/css/style.css": ["less/style.less"]
         }
       }
-    }
-  });
+    },
 
-  grunt.initConfig({
     svgstore: {
       options: {
         svg: {
@@ -107,10 +104,8 @@ module.exports = function(grunt) {
           "build/img/symbols.svg": ["img/icons/*.svg"]
         }
       }
-    }
-  });
-
-  grunt.initConfig({
+    },
+           
     svgmin: {
       symbols: {
         files: [{
@@ -118,10 +113,8 @@ module.exports = function(grunt) {
             src: ["build/img/icons/*.svg"]
         }]
       }
-    }
-  });
+    },
 
-  grunt.initConfig({
     imagemin: {
       images: {
         options: {
@@ -133,9 +126,8 @@ module.exports = function(grunt) {
             src: ["build/img/**/*.{png,jpg,gif}"]
         }]
       }
-    }
-  });
-
+    },
+   
   grunt.registerTask("symbols", ["svgmin", "svgstore"]);
     grunt.registerTask("build", [
       "clean",
@@ -146,4 +138,6 @@ module.exports = function(grunt) {
       "symbols",
       "imagemin"
     ]);
-};
+  });
+
+  grunt.registerTask("serve", ["browserSync", "watch"]);
