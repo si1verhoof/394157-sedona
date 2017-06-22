@@ -123,38 +123,38 @@
             Оставьте свой отзыв
           </h1>
           <p class="feedback-intro__text">
-            Помогите нашим отелям стать ещё лучше! Оставьте отзыв о них,
+            Помогите нашим отелям стать лучше! Оставьте отзыв о них,
             а так же о посещенных вами достопримечательностях
           </p>
         </div>
         <form class="feedback-form">
-          <section class="feedback-form__name feedback-form__item form-group">
-            <h2 class="form-group__title">
+          <section class="feedback-form__name feedback-form__item form-group form-group--name">
+            <h2 class="form-group__title form-group__title--name">
               Представьтесь:
             </h2>
             <ul class="form-group__list form-group__list--input-fields">
               <li class="form-group__item form-group__item--input-fields">
                 <label for="input-name" class="form-group__label">
-                  Имя<sup>*</sup>
+                  Имя<sup>*</sup>:
                 </label>
-                <input type="text" class="form-group__input" value="Пётр" id="input-name" required>
+                <input type="text" class="form-group__input" placeholder="Пётр" id="input-name" required>
               </li>
               <li class="form-group__item form-group__item--input-fields">
                 <label for="input-surname" class="form-group__label">
-                  Фамилия<sup>*</sup>
+                  Фамилия<sup>*</sup>:
                 </label>
-                <input type="text" class="form-group__input" value="Иванов"  id="input-surname" required>
+                <input type="text" class="form-group__input" placeholder="Иванов"  id="input-surname" required>
               </li>
               <li class="form-group__item form-group__item--input-fields">
                 <label for="input-second-name" class="form-group__label">
-                  Отчество
+                  Отчество:
                 </label>
-                <input type="text" class="form-group__input" value="Александрович"  id="input-second-name">
+                <input type="text" class="form-group__input" placeholder="Александрович"  id="input-second-name">
               </li>
             </ul>
           </section>
-          <section class="feedback-form__contacts feedback-form__item form-group">
-            <h2 class="form-group__title">
+          <section class="feedback-form__contacts feedback-form__item form-group form-group--contacts">
+            <h2 class="form-group__title form-group__title--contacts">
               Контактная информация:
             </h2>
             <ul class="form-group__list form-group__list--input-fields-contacts">
@@ -162,21 +162,21 @@
                 <label for="input-tel" class="form-group__label form-group__label--contacts">
                   <span class="form-group__hidden-desktop-version-text">Контактный</span> телефон:<sup>*</sup>
                 </label>
-                <input type="tel" class="form-group__contacts-input form-group__input" value="Введите телефон" id="input-tel" required> <!--паттерн нужен?-->
+                <input type="tel" class="form-group__contacts-input form-group__input" placeholder="Введите телефон" id="input-tel" required> <!--паттерн нужен?-->
               </li>
               <li class="form-group__item form-group__item--input-fields-contacts">
                 <label for="input-email" class="form-group__label form-group__label--contacts">
                   Электронная почта:<sup>*</sup>
                 </label>
-                <input type="email" class="form-group__contacts-input form-group__input" value="Введите e-mail" id="input-email" required>
+                <input type="email" class="form-group__contacts-input form-group__input" placeholder="Введите e-mail" id="input-email" required>
               </li>
             </ul>
           </section>
-          <section class="feedback-form__radio feedback-form__item form-group">
-            <h2 class="form-group__title">
+          <section class="feedback-form__radio feedback-form__item form-group form-group--border-right">
+            <h2 class="form-group__title form-group__title--radio">
               Ваше общее впечатление:
             </h2>
-            <ul class="form-group__list">
+            <ul class="form-group__list form-group__list--radio">
               <li class="form-group__item">
                 <input type="radio" name="radio-feedback" id="positive" class="form-group__unit" checked>
                 <label for="positive" class="form-group__label form-group__label--radio form-group__label--non-transform">
@@ -197,31 +197,31 @@
               </li>
             </ul>
           </section>
-          <section class="feedback-form__checkbox feedback-form__item form-group">
-            <h2 class="form-group__title">
-              Посещённые<br> достопримечтальности:
+          <section class="feedback-form__checkbox feedback-form__item form-group form-group--checkbox">
+            <h2 class="form-group__title form-group__title--checkbox">
+              Посещённые<br> достопримечательности:
             </h2>
             <ul class="form-group__list form-group__list--checkbox">
               <li class="form-group__item form-group__item--checkbox-list-item">
                 <input type="checkbox" name="item-bridge" id="bridge" class="form-group__unit" checked>
                 <label for="bridge" class="form-group__label--non-transform form-group__label--checkbox">Мост Дьявола</label>
               </li>
-              <li class="form-group__item form-group__item--checkbox-list-item">
+              <li class="form-group__item form-group__item--checkbox-list-item form-group__item--checkbox-list-item-flex-order-3">
                 <input type="checkbox" name="item-park" id="park" class="form-group__unit" checked>
                 <label for="park" class="form-group__label--non-transform form-group__label--checkbox">Слайд-парк</label>
               </li>
-              <li class="form-group__item form-group__item--checkbox-list-item">
+              <li class="form-group__item form-group__item--checkbox-list-item form-group__item--checkbox-list-item-flex-order-2">
                 <input type="checkbox" name="item-mountain" id="mountain" class="form-group__unit">
                 <label for="mountain" class="form-group__label--non-transform form-group__label--checkbox">Гора-Колокол</label>
               </li>
-              <li class="form-group__item form-group__item--checkbox-list-item">
+              <li class="form-group__item form-group__item--checkbox-list-item form-group__item--checkbox-list-item-flex-order-4">
                 <input type="checkbox" name="item-red-rocks" id="red-rocks" class="form-group__unit" checked>
-                <label for="red-rocks" class="form-group__label--non-transform form-group__label--checkbox">Красные скалы</label>
+                <label for="red-rocks" class="form-group__label--non-transform form-group__label--checkbox form-group__label--checkbox-last">Красные скалы</label>
               </li>
             </ul>
           </section>
-          <section class="feedback-form__review feedback-form__item form-group">
-            <h2 class="form-group__title">
+          <section class="feedback-form__review feedback-form__item form-group form-group--review">
+            <h2 class="form-group__title form-group__title--review">
               Опишите свои эмоции:
             </h2>
             <textarea rows="5" name="review-area" id="review-field" class="form-group__textarea">Опишите подробно все свои восторги</textarea>

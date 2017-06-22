@@ -3,7 +3,7 @@
   font-size: 14px;
   line-height: 24px;
   text-transform: uppercase;
-  padding: 15px 20px 45px;
+  padding: 15px 20px 25px;
   border-bottom: 1px solid @border-color-lightgray;
 }
 
@@ -20,7 +20,7 @@
   display: inline-block;
   vertical-align: middle;
   margin: 0 auto;
-  margin-bottom: 23px;
+  margin-bottom: 18px;
   text-align: center;
   width: 100%;
 }
@@ -46,15 +46,24 @@
 }
 
 .form-group__input {
-  padding-top: 19px;
+  padding-top: 17px;
   padding-bottom: 18px;
   padding-left: 30px;
   border: none;
-  background-color: rgb(242, 242, 242);
+  background-color: @bg-color-lightgray;
+  &::-webkit-input-placeholder {color:@color-black;}
+  &::-moz-placeholder {color:@color-black;}/* Firefox 19+ */
+  &:-moz-placeholder {color:@color-black;}/* Firefox 18- */
+  &:-ms-input-placeholder {color:@color-black;}
   flex-grow: 1;
   margin-left: 13px;
   font-size: 18px;
   font-weight: bold;
+  width: 100%;
+}
+
+.form-group__list--radio {
+  margin-top: 10px;
 }
 
 .form-group__contacts-input {
@@ -68,6 +77,7 @@
   vertical-align: middle;
   margin-top: 10px;
   margin-bottom: 10px;
+  padding-left: 20px;
 }
 
 .form-group__textarea {
@@ -90,14 +100,15 @@
 }
 
 .form-group__label--radio {
-  padding-left: 74px;
+  padding-left: 80px;
   position: relative;
   padding-top: 17px;
   padding-bottom: 18px;
-  margin-bottom: 22px;
+  margin-bottom: 8px;
   display: inline-block;
   vertical-align: middle;
   font-weight: bold;
+  font-size: 18px;
   &::before {
     content: "";
     position: absolute;
@@ -133,10 +144,11 @@
   position: relative;
   padding-top: 17px;
   padding-bottom: 18px;
-  margin-bottom: 22px;
+  margin-bottom: 19px;
   display: inline-block;
   vertical-align: middle;
   font-weight: bold;
+  font-size: 18px;
   &::before {
     content: "";
     position: absolute;
@@ -150,6 +162,10 @@
     background-color: rgb(242, 242, 242);
     border-radius: 5px;
   };
+}
+
+.form-group__label--checkbox-last {
+  margin-bottom: 0;
 }
 
 .form-group__unit:checked + .form-group__label--checkbox::after {
@@ -195,29 +211,159 @@
     box-sizing: border-box;
     justify-content: space-between;
     margin: 40px auto 20px;
+    padding-left: 10px;
   }
 
   .form-group__item--checkbox-list-item {
     width: 200px;
   }
 
-  .form-group__label--contacts {
-    margin-left: 20px;
-  }
-
 /* Сетка для полей ввода ФИО */
   .form-group__item--input-fields {
     width: 268px;
-    margin-left: 35px;
-  }
-
-  .form-group__item--input-fields-contacts {
-    width: 648px;
-    margin-left: -20px;
   }
 
   .form-group {
     border-bottom: none;
+    padding: 0;
+    padding-top: 17px;
+  }
+
+  .form-group__title {
+    font-size: 21px;
+    text-align: left;
+    font-weight: bold;
+  }
+
+  .form-group__title--radio {
+    margin-bottom: 47px;
+  }
+  
+  .form-group__label--radio {
+    padding-left: 75px;
+    padding-bottom: 28px;
+  }
+
+  .form-group--border-right {
+    position: relative;
+  }
+
+  .form-group--border-right::after {
+    content: "";
+    position: absolute;
+    height: 290px;
+    width: 1px;
+    background-color: @border-color-gray-form;
+    right: 0;
+    top: 25px;
+  }
+
+  .form-group--name {
+    padding-left: 58px;
+  }
+
+  .form-group__title--name {
+    margin-bottom: 56px;
+    font-weight: bold;
+  }
+
+  .form-group--contacts {
+    padding-top: 53px;
+    padding-bottom: 23px;
+  }
+
+  .form-group__title--contacts,
+  .form-group__title--checkbox {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    &::before,
+    &::after {
+      position: absolute;
+      content: "";
+      width: 125px;
+      height: 1px;
+      background-color: @border-color-gray-form;
+      top: 12px;
+    };
+    &::before {
+      left: 0;
+    };
+    &::after {
+      right: 0;
+    };
+  }
+
+  .form-group__contacts-input {
+    padding-left: 22px;
+    padding-top: 12px;
+  }
+
+  .form-group__item--input-fields-contacts {
+    width: 648px;
+    margin-bottom: 15px;
+  }
+
+  .form-group__title--checkbox {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0;
+    &::before,
+    &::after {
+      top: 20px;
+    }
+  }
+
+  .form-group__item--checkbox-list-item-flex-order-2 {
+    order: 1;
+  }
+
+  .form-group__item--checkbox-list-item-flex-order-3 {
+    order: 2;
+  }
+
+  .form-group__item--checkbox-list-item-flex-order-4 {
+    order: 3;
+  }
+
+  .form-group__label--checkbox {
+    margin-bottom: 28px;
+  }
+
+  .form-group--review {
+    padding-top: 1px;
+    min-height: 303px;
+  }
+
+  .form-group__title--review {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    margin-bottom: 60px;
+    &::before,
+    &::after {
+      position: absolute;
+      content: "";
+      width: 125px;
+      height: 1px;
+      background-color: @border-color-gray-form;
+      top: 12px;
+    };
+    &::before {
+      left: 0;
+    };
+    &::after {
+      right: 0;
+    };
+  }
+
+  .form-group__textarea {
+    padding-left: 22px;
+    box-sizing: border-box;
+  }
+
+  .form-group__title--contacts {
+    margin-bottom: 76px;
   }
 
 }
@@ -229,6 +375,7 @@
   .form-group__list--checkbox {
     width: 100%;
     min-height: 0;
+    padding-left: 0;
   }
 
   .form-group__item--input-fields {
@@ -236,7 +383,8 @@
   }
   /* Сетка для контактов */
   .form-group__contacts-input {
-    width: 310px;
+    width: 320px;
+    margin-left: 10px;
   }
 
   .form-group__hidden-desktop-version-text {
@@ -254,4 +402,22 @@
   .pop-up-submision--succes {
     width: 640px;
   }
+
+  .form-group__title--radio {
+    margin-left: 80px;
+  }
+
+  .form-group--name {
+    padding-left: 80px;
+  }
+
+  .form-group__label--contacts {
+    padding-left: 0;
+  }
+
+  .form-group--review {
+    padding-top: 15px;
+    padding-bottom: 50px;
+  }
+
 }
