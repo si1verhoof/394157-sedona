@@ -10,6 +10,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks("grunt-contrib-imagemin");
   grunt.loadNpmTasks("grunt-svgmin");
   grunt.loadNpmTasks("grunt-svgstore");
+  grunt.loadNpmTasks("grunt-csso");
 
   grunt.initConfig({
     less: {
@@ -60,6 +61,21 @@ module.exports = function(grunt) {
       style: {
         files: ["less/**/*.less"],
         tasks: ["less", "postcss", "csso"]
+      }
+    },
+
+    clean: {
+      build: ["build"]
+    },
+
+    csso: {
+      style: {
+        options: {
+          report: "gzip"
+        },
+        files: {
+          "build/css/style.min.css": ["css/style.css"]
+        }
       }
     },
   
@@ -127,17 +143,18 @@ module.exports = function(grunt) {
         }]
       }
     },
-   
-  grunt.registerTask("symbols", ["svgmin", "svgstore"]);
-    grunt.registerTask("build", [
-      "clean",
-      "copy",
-      "less",
-      "postcss",
-      "csso",
-      "symbols",
-      "imagemin"
-    ]);
   });
+   
+grunt.registerTask("symbols", ["svgmin", "svgstore"]);
+  grunt.registerTask("build", [
+    "clean",
+    "copy",
+    "less",
+    "postcss",
+    "csso",
+    "symbols",
+    "imagemin"
+  ]);
 
   grunt.registerTask("serve", ["browserSync", "watch"]);
+}
