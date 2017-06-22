@@ -10,7 +10,7 @@ module.exports = function(grunt) {
     less: {
       style: {
         files: {
-          "css/style.css": "less/style.less"
+          "build/css/style.css": "less/style.less"
         }
       }
     },
@@ -24,7 +24,7 @@ module.exports = function(grunt) {
             ]})
           ]
         },
-        src: "css/*.css"
+        src: "build/css/*.css"
       }
     },
 
@@ -32,8 +32,8 @@ module.exports = function(grunt) {
       server: {
         bsFiles: {
           src: [
-            "*.html",
-            "css/*.css"
+            "build/*.html",
+            "build/css/*.css"
           ]
         },
         options: {
@@ -48,12 +48,102 @@ module.exports = function(grunt) {
     },
 
     watch: {
+      html: {
+        files: ["*.html"],
+        tasks: ["copy:html"]
+      },
       style: {
         files: ["less/**/*.less"],
-        tasks: ["less", "postcss"]
+        tasks: ["less", "postcss", "csso"]
       }
     }
   });
 
   grunt.registerTask("serve", ["browserSync", "watch"]);
+
+  grunt.initConfig({
+    copy: {
+      build: {
+        files: [{
+          expand: true,
+          src: [
+            "fonts/**/*.{woff,woff2}",
+            "img/**",
+            "js/**",
+            ".html"
+          ],
+          dest: "build"
+        }]
+      },
+      html: {
+        files: [{
+          expand: true,
+          src: ["*.html"],
+          dest: "build"
+        }]
+      } 
+    }
+  });
+
+  grunt.initConfig({
+    less: {
+      style: {
+        files: {
+          "build/css/style.css": ["less/style.less"]
+        }
+      }
+    }
+  });
+
+  grunt.initConfig({
+    svgstore: {
+      options: {
+        svg: {
+          style: "display: none"
+        }
+      },
+      symbols: {
+        files: {
+          "build/img/symbols.svg": ["img/icons/*.svg"]
+        }
+      }
+    }
+  });
+
+  grunt.initConfig({
+    svgmin: {
+      symbols: {
+        files: [{
+          expand: true,
+            src: ["build/img/icons/*.svg"]
+        }]
+      }
+    }
+  });
+
+  grunt.initConfig({
+    imagemin: {
+      images: {
+        options: {
+          optimizationLevel: 3,
+            progressive: true
+        },
+        files: [{
+          expand: true,
+            src: ["build/img/**/*.{png,jpg,gif}"]
+        }]
+      }
+    }
+  });
+
+  grunt.registerTask("symbols", ["svgmin", "svgstore"]);
+    grunt.registerTask("build", [
+      "clean",
+      "copy",
+      "less",
+      "postcss",
+      "csso",
+      "symbols",
+      "imagemin"
+    ]);
 };

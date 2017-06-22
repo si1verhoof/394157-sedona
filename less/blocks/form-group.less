@@ -201,7 +201,28 @@
   };
 }
 
+/* Иконки полей ввода в форме */
+
+.form-group__item--input-fields-contacts {
+  position: relative;
+  z-index: 1;
+}
+
+.form-group__icon-contacts {
+  padding: 20px 21px;
+  background-color: @bg-color-darkgray;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+}
+
 @media @tablet-widths {
+
+  .form-group__icon-contacts {
+    padding: 17.5px 19px;
+  }
+
   /* Сетка для чекбокса */
   .form-group__list--checkbox {
     width: 470px;
@@ -362,10 +383,6 @@
     box-sizing: border-box;
   }
 
-  .form-group__title--contacts {
-    margin-bottom: 76px;
-  }
-
 }
 
 @media @desktop-widths {
@@ -418,6 +435,14 @@
   .form-group--review {
     padding-top: 15px;
     padding-bottom: 50px;
+  }
+
+  .form-group__icon-contacts--phone {
+    right: 78px;
+  }
+
+  .form-group__title--contacts {
+    margin-bottom: 76px;
   }
 
 }

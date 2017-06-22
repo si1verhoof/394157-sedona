@@ -162,13 +162,15 @@
                 <label for="input-tel" class="form-group__label form-group__label--contacts">
                   <span class="form-group__hidden-desktop-version-text">Контактный</span> телефон:<sup>*</sup>
                 </label>
-                <input type="tel" class="form-group__contacts-input form-group__input" placeholder="Введите телефон" id="input-tel" required> <!--паттерн нужен?-->
+                <input type="tel" class="form-group__contacts-input form-group__input" placeholder="Введите телефон" id="input-tel" required>
+                <svg width="18" height="18" class="form-group__icon-contacts form-group__icon-contacts--phone"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-phone"></use></svg>
               </li>
               <li class="form-group__item form-group__item--input-fields-contacts">
                 <label for="input-email" class="form-group__label form-group__label--contacts">
                   Электронная почта:<sup>*</sup>
                 </label>
                 <input type="email" class="form-group__contacts-input form-group__input" placeholder="Введите e-mail" id="input-email" required>
+                <svg width="18" height="18" class="form-group__icon-contacts form-group__icon-contacts--mail"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-mail"></use></svg>
               </li>
             </ul>
           </section>
@@ -211,11 +213,11 @@
                 <label for="park" class="form-group__label--non-transform form-group__label--checkbox">Слайд-парк</label>
               </li>
               <li class="form-group__item form-group__item--checkbox-list-item form-group__item--checkbox-list-item-flex-order-2">
-                <input type="checkbox" name="item-mountain" id="mountain" class="form-group__unit">
+                <input type="checkbox" name="item-mountain" id="mountain" class="form-group__unit" checked>
                 <label for="mountain" class="form-group__label--non-transform form-group__label--checkbox">Гора-Колокол</label>
               </li>
               <li class="form-group__item form-group__item--checkbox-list-item form-group__item--checkbox-list-item-flex-order-4">
-                <input type="checkbox" name="item-red-rocks" id="red-rocks" class="form-group__unit" checked>
+                <input type="checkbox" name="item-red-rocks" id="red-rocks" class="form-group__unit">
                 <label for="red-rocks" class="form-group__label--non-transform form-group__label--checkbox form-group__label--checkbox-last">Красные скалы</label>
               </li>
             </ul>
