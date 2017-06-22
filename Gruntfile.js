@@ -78,7 +78,7 @@ module.exports = function(grunt) {
         }
       }
     },
-  
+
     copy: {
       build: {
         files: [{
@@ -98,7 +98,7 @@ module.exports = function(grunt) {
           src: ["*.html"],
           dest: "build"
         }]
-      } 
+      }
     },
 
     less: {
@@ -121,7 +121,7 @@ module.exports = function(grunt) {
         }
       }
     },
-           
+
     svgmin: {
       symbols: {
         files: [{
@@ -144,17 +144,17 @@ module.exports = function(grunt) {
       }
     },
   });
-   
-grunt.registerTask("symbols", ["svgmin", "svgstore"]);
-  grunt.registerTask("build", [
-    "clean",
-    "copy",
-    "less",
-    "postcss",
-    "csso",
-    "symbols",
-    "imagemin"
-  ]);
+
+  grunt.registerTask("symbols", ["svgmin", "svgstore"]);
+    grunt.registerTask("build", [
+      "clean",
+      "copy",
+      "less",
+      "postcss",
+      "csso",
+      "symbols",
+      "imagemin"
+    ]);
 
   grunt.registerTask("serve", ["browserSync", "watch"]);
 }
