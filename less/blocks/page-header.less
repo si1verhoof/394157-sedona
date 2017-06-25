@@ -4,6 +4,7 @@
 
 .page-header__background-image--wide {
   height: 390px;
+  background-color: @bg-color-photo-index;
   background-image:
     url("../img/text-sedona-index.svg"),
     url("../img/bg-intro-triangle-mobile.svg"),
@@ -36,6 +37,7 @@
 
 .page-header__background-image--short {
   height: 160px;
+  background-color: @bg-color-photo-secondary-page;
   background-image:
     url("../img/text-sedona.svg"),
     url("../img/bg-intro-triangle-mobile.svg"),
@@ -100,6 +102,7 @@
 
   .page-header__background-image--short {
     height: 290px;
+    background-color: @bg-color-photo-index;
     background-image:
       url("../img/text-sedona.svg"),
       url("../img/bg-intro-triangle-tablet.svg"),
@@ -142,7 +145,7 @@
       bottom center,
       top center;
     background-size:
-      67% 67%,
+      auto 67%,
       auto auto,
       100% auto;
     @media @retina {
@@ -155,7 +158,7 @@
         bottom center,
         cover;
       background-size:
-        67% 67%,
+        auto 67%,
         auto auto,
         100% auto;
     }

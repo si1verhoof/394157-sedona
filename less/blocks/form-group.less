@@ -60,6 +60,13 @@
   font-size: 18px;
   font-weight: bold;
   width: 100%;
+  &:hover {
+    background-color: @bg-color-disabled;
+  };
+  &:focus {
+    background-color: @bg-color-white;
+    outline: 4px solid @bg-color-disabled;
+  }
 }
 
 .form-group__list--radio {
@@ -119,8 +126,14 @@
     height: 56px;
     top: 0;
     left: 0;
-    background-color: rgb(242, 242, 242);
+    background-color: @bg-color-radio;
     border-radius: 50%;
+  };
+  &:hover::before {
+    background-color: @bg-color-disabled;
+  };
+  &:active::before {
+    background-color: @bg-color-radio-active;
   };
 }
 
@@ -132,8 +145,17 @@
   top: 0;
   left: 0;
   border-radius: 50%;
-  background-color: rgb(51, 51, 51);
-  border: 17px solid rgb(242, 242, 242);
+  background-color: @color-gray;
+  border: 17px solid @bg-color-radio;
+}
+
+.form-group__unit:checked + .form-group__label--radio:hover::before {
+  border-color: @bg-color-disabled;
+}
+
+.form-group__unit:checked + .form-group__label--radio:active::before {
+  border-color: @bg-color-radio-active;
+  background-color: @bg-color-translucent;
 }
 
 /* Псевдоэлементы для формы
@@ -162,6 +184,12 @@
     background-color: rgb(242, 242, 242);
     border-radius: 5px;
   };
+  &:hover::before {
+    background-color: @bg-color-disabled;
+  };
+  &:active::before {
+    background-color: @bg-color-radio-active;
+  };
 }
 
 .form-group__label--checkbox-last {
@@ -181,6 +209,14 @@
   border-left: 3px solid rgb(0, 0, 0);
   border-bottom: 3px solid rgb(0, 0, 0);
   transform: rotate(-45deg);
+}
+
+.form-group__unit:checked + .form-group__label--checkbox:hover::before {
+  border-color: @bg-color-disabled;
+}
+
+.form-group__unit:checked + .form-group__label--checkbox:active::after {
+  border-color: @bg-color-translucent;
 }
 
 /* Псевдоэлементы в формах ввода */

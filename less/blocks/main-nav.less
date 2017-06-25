@@ -35,12 +35,21 @@
   text-align: center;
   border-top: 1px solid @border-color-lightblue;
   border-bottom: 1px solid @border-color-darkblue;
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
   &:first-child {
     border-top-color: transparent;
   };
   &:last-child {
     border-bottom-color: transparent;
     box-shadow: inset 0 -15px 15px -15px @border-color-darkblue;
+  };
+  &:hover {
+    background-color: @bg-color-hover;
+  };
+  &:active {
+    background-color: @bg-color-active;
   };
 }
 
@@ -95,7 +104,6 @@
 
   .main-nav__link {
     color: @color-black;
-    padding: 21px 30px;
     font-size: 14px;
     &:hover {
       color: @bg-color;
@@ -148,12 +156,17 @@
 
 @media @desktop-widths {
 
+  .main-nav__item {
+  &:hover {
+    background-color: transparent;
+  };
+  &:active {
+    background-color: transparent;
+  };
+}
+
   .main-nav__list {
     width: 100%;
-  }
-
-  .main-nav__link {
-    padding: 21px 80px;
   }
 
   .main-nav__item {
@@ -166,6 +179,7 @@
 
   .main-nav__item:nth-child(2) {
     margin-right: 260px;
+    margin-left: 20px;
   }
 
   .main-nav__item:last-child {
